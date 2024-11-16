@@ -40,13 +40,13 @@ const Index = () => {
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
-                             <span className="highlight">Compromentidos</span> con la <span className="highlight"> salud </span> y <span className="highlight">felicidad</span>
+                             <span className="highlight">Compromentidos</span> con la <span className="highlight"> salud </span>
                           </div>
                           <div className="title clr-pri-2">
                              de tus <span className="highlight-important">peques</span>
                           </div>
                           <div className="box-custom">
-                            <div className="wrap clr-pri-1">Kindco School</div>
+                            <div className="wrap clr-pri-1">Zona Pediátrica</div>
                             <svg
                               data-name="Hero Area"
                               xmlns="http://www.w3.org/2000/svg"
