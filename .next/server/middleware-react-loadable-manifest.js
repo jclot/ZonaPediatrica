@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"src\\\\components\\\\TfCounter.tsx -> ./Counter\":{\"id\":\"src\\\\components\\\\TfCounter.tsx -> ./Counter\",\"files\":[\"static/chunks/src_components_Counter_js.js\"]}}"
