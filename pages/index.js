@@ -40,10 +40,10 @@ const Index = () => {
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
-                            We Care Child Study
+                             <span className="highlight">Compromentidos</span> con la <span className="highlight"> salud </span> y <span className="highlight">felicidad</span>
                           </div>
                           <div className="title clr-pri-2">
-                            Start Learning With Us
+                             de tus <span className="highlight-important">peques</span>
                           </div>
                           <div className="box-custom">
                             <div className="wrap clr-pri-1">Kindco School</div>

@@ -169,8 +169,8 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="content">
-                    <p>Hotline</p>
-                    <h4>+012 (345) 678</h4>
+                    <p>Linea Telefónica</p>
+                    <h4>+506 4040 0808</h4>
                   </div>
                 </div>
               </div>

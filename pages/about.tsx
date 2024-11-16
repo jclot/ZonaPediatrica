@@ -568,8 +568,8 @@ const About = () => {
                       </g>
                     </svg>
                     <ul>
-                      <li className="clr-pri-1">Hotline</li>
-                      <li className="clr-pri-1">+012 (345) 678</li>
+                      <li className="clr-pri-1">Linea Telefónica</li>
+                      <li className="clr-pri-1">+506 4040 0808</li>
                     </ul>
                   </div>
                 </div>

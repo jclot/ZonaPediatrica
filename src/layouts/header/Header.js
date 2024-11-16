@@ -28,7 +28,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="inner jus-ct">
           <p className="clr-pri-1">
-            Working Jours : Sun - Friday, 08:00 am - 05:00 pm
+          Horas de trabajo: Lunes - Jueves, Sabado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
           </p>
         </div>
       </div>
@@ -181,8 +181,8 @@ const Header = () => {
                         </g>
                       </svg>
                       <ul>
-                        <li className="clr-pri-2">Hotline</li>
-                        <li className="clr-pri-2">+012 (345) 678</li>
+                        <li className="clr-pri-2">Linea Telefónica</li>
+                        <li className="clr-pri-2">+506 4040 0808</li>
                       </ul>
                     </div>
                   </div>
