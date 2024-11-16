@@ -96,3 +96,11 @@
   display: block;
   margin: 10px 0 !important;
 }
+
+.highlight {
+  color: #a3d6fa;
+}
+
+.highlight-important {
+  color: #edd42c
+}
