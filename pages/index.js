@@ -40,10 +40,10 @@ const Index = () => {
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
-                             <span className="highlight">Compromentidos</span> con la <span className="highlight"> salud </span>
+                            <span className="highlight">Comprometidos</span> con
                           </div>
                           <div className="title clr-pri-2">
-                             de tus <span className="highlight-important">peques</span>
+                            <span className="highlight">la salud</span> de tus <span className="highlight-important">peques</span>
                           </div>
                           <div className="box-custom">
                             <div className="wrap clr-pri-1">Zona Pediátrica</div>
@@ -67,15 +67,15 @@ const Index = () => {
                           <ul>
                             <li className="st-1 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Outdoor Games</p>
+                              <p className="clr-pri-2">Pediatría</p>
                             </li>
                             <li className="st-2 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Sport Activites</p>
+                              <p className="clr-pri-2">Hematología pediatríca</p>
                             </li>
                             <li className="st-3 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Nutritious Foods</p>
+                              <p className="clr-pri-2">Medicina y Cirugia</p>
                             </li>
                           </ul>
                           <div className="box-btn">
@@ -103,13 +103,13 @@ const Index = () => {
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
-                            We Care Child Study
+                            <span className="highlight-important">Construyendo</span> un <span className="highlight">futuro</span>
                           </div>
                           <div className="title clr-pri-2">
-                            Start Learning With
+                            <span className="highlight">sano</span> y <span className="highlight">feliz</span> para ellos
                           </div>
                           <div className="box-custom">
-                            <div className="wrap clr-pri-1">Kindco School</div>
+                            <div className="wrap clr-pri-1">Zona Pediátrica</div>
                             <svg
                               data-name="Hero Area"
                               xmlns="http://www.w3.org/2000/svg"
@@ -130,15 +130,15 @@ const Index = () => {
                           <ul>
                             <li className="st-1 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Outdoor Games</p>
+                              <p className="clr-pri-2">Pediatría</p>
                             </li>
                             <li className="st-2 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Sport Activites</p>
+                              <p className="clr-pri-2">Hematología pediatríca</p>
                             </li>
                             <li className="st-3 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Nutritious Foods</p>
+                              <p className="clr-pri-2">Medicina y Cirugia</p>
                             </li>
                           </ul>
                           <div className="box-btn">
