@@ -40,10 +40,10 @@ const Index = () => {
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
-                            <span className="highlight">Comprometidos</span> con
+                            <span className="highlight">Comprometida</span> con
                           </div>
                           <div className="title clr-pri-2">
-                            <span className="highlight">la salud</span> de tus <span className="highlight-important">peques</span>
+                            la <span className="highlight">salud</span> de tus <span className="highlight-important">peques</span>
                           </div>
                           <div className="box-custom">
                             <div className="wrap clr-pri-1">Zona Pediátrica</div>
@@ -80,11 +80,11 @@ const Index = () => {
                           </ul>
                           <div className="box-btn">
                             <a href="contact/" className="fl-btn st-12">
-                              <span className="inner">Contact Us</span>
+                              <span className="inner">Contáctame</span>
                             </a>
                             <Link legacyBehavior href="/about">
                               <a className="fl-btn st-1">
-                                <span className="inner">learn more</span>
+                                <span className="inner">Más información</span>
                               </a>
                             </Link>
                           </div>
@@ -143,10 +143,10 @@ const Index = () => {
                           </ul>
                           <div className="box-btn">
                             <a href="#" className="fl-btn st-12">
-                              <span className="inner">COntact Us</span>
+                              <span className="inner">Contáctame</span>
                             </a>
                             <a href="#" className="fl-btn st-1">
-                              <span className="inner">learn more</span>
+                              <span className="inner">Más información</span>
                             </a>
                           </div>
                         </div>
@@ -176,11 +176,11 @@ const Index = () => {
               <div className="title-heading st-2">
                 <div className="sub-heading clr-pri-1 f-mulish">
                   <LeftArrowWhite />
-                  <span className="inner-sub st-1">Why Choose Us</span>
+                  <span className="inner-sub st-1">¿Quién soy yo?</span>
                   <RightArrowWhite />
                 </div>
                 <h2 className="title clr-pri-1">
-                  Discover Now Why People Come With Kindco
+                  Descubre por qué la gente viene conmigo
                 </h2>
               </div>
             </div>
@@ -210,18 +210,17 @@ const Index = () => {
                 <div className="box-content">
                   <h4 className="title">
                     <Link legacyBehavior href="/classes">
-                      <a>Study &amp; Game</a>
+                      <a>Formación</a>
                     </Link>
                   </h4>
                   <p className="wrap f-mulish">
-                    Sed ut perspiciatis unde omnis iste natu voluptatem accus
-                    antium dolorem
+                    Amplia experiencia académica en pediatría y hematología pediátrica con honores.
                   </p>
-                  <Link legacyBehavior href="/classes">
+                  {/* <Link legacyBehavior href="/classes">
                     <a className="fl-btn st-13">
                       <span className="inner">read more</span>
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -251,18 +250,17 @@ const Index = () => {
                 <div className="box-content">
                   <h4 className="title">
                     <Link legacyBehavior href="/program">
-                      <a>A to Z Programs</a>
+                      <a>Enfoque Personal</a>
                     </Link>
                   </h4>
                   <p className="wrap f-mulish">
-                    Sed ut perspiciatis unde omnis iste natu voluptatem accus
-                    antium dolorem
+                    Combino mi experiencia profesional y como mamá para entender cada proceso del camino.
                   </p>
-                  <Link legacyBehavior href="/program">
+                  {/* <Link legacyBehavior href="/program">
                     <a className="fl-btn st-13">
                       <span className="inner">read more</span>
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -292,18 +290,17 @@ const Index = () => {
                 <div className="box-content">
                   <h4 className="title">
                     <Link legacyBehavior href="/teacher">
-                      <a>Expert Teacher</a>
+                      <a>Ambiente Amigable</a>
                     </Link>
                   </h4>
                   <p className="wrap f-mulish">
-                    Sed ut perspiciatis unde omnis iste natu voluptatem accus
-                    antium dolorem
+                    Espacio cálido, inclusivo y respetuoso que fomenta confianza y comodidad para todos.
                   </p>
-                  <Link legacyBehavior href="/teacher">
+                  {/* <Link legacyBehavior href="/teacher">
                     <a className="fl-btn st-13">
                       <span className="inner">read more</span>
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -333,18 +330,17 @@ const Index = () => {
                 <div className="box-content">
                   <h4 className="title">
                     <Link legacyBehavior href="/events">
-                      <a>Mental Health</a>
+                      <a>Confianza</a>
                     </Link>
                   </h4>
                   <p className="wrap f-mulish">
-                    Sed ut perspiciatis unde omnis iste natu voluptatem accus
-                    antium dolorem
+                    Trabajo contigo para tomar decisiones informadas y vencer todos los temores juntos.
                   </p>
-                  <Link legacyBehavior href="/events">
+                  {/* <Link legacyBehavior href="/events">
                     <a className="fl-btn st-13">
                       <span className="inner">read more</span>
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
