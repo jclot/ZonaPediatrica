@@ -33,7 +33,7 @@ const MobileMenu = () => {
       <div className="top-bar">
         <div className="inner jus-ct">
           <p className="clr-pri-1">
-            Horas de trabajo: Lunes - Jueves, Sabado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
+          Horarios: Lun-Jue, Sáb 8am-12pm; Vie 8am-4pm
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ const MobileMenu = () => {
                 <div id="site-logo-mobile" className="clearfix">
                   <Link legacyBehavior href="/">
                     <a className="logo">
-                      <img src="assets/images/logo/Versiones Zona Pediatrica_page-0001.jpg" alt="Kinco" />
+                      <img src="assets/images/logo/Versiones_Zona_Pediatrica_page-0001-removebg-preview.png" alt="Kinco" />
                     </a>
                   </Link>
                 </div>
