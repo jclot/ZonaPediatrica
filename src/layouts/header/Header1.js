@@ -29,7 +29,7 @@ const Header1 = () => {
               <div id="site-logo" className="clearfix">
                 <Link legacyBehavior href="/">
                   <a className="logo st-2">
-                    <img src="assets/images/logo/Versiones Zona Pediatrica_page-0001.jpg" alt="Kinco" />
+                    <img src="assets/images/logo/Versiones_Zona_Pediatrica_page-0001-removebg-preview.png" alt="Kinco" />
                   </a>
                 </Link>
               </div>
@@ -53,8 +53,8 @@ const Header1 = () => {
                     </g>
                   </svg>
                   <ul>
-                    <li className="clr-pri-4">School Location</li>
-                    <li className="clr-pri-2">55 Main Street, New York</li>
+                    <li className="clr-pri-4">Ubicación</li>
+                    <li className="clr-pri-2">Edificio Latitud Dent, C308.</li>
                   </ul>
                 </div>
                 <div className="inner-contact fx">
