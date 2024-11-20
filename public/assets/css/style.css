@@ -1175,16 +1175,16 @@ a:focus {
 }
 
 #site-logo {
-    width: 20%;
+    width: 18%;
 }
 
 #site-logo-mobile {
-    width: 30%;
+    width: 27%;
 }
 
 @media (max-width: 767px) {
     #site-logo-mobile {
-        width: 45%;
+        width: 50%;
     }
 }
 
