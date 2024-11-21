@@ -92,7 +92,7 @@ const Index = () => {
                         <div className="box-feature">
                           <div className="image">
                             <img
-                              src="assets/images/common/slider-1.png"
+                              src="assets/images/DALL·E 2024-11-20 20.13.10 - An illustration of a group of happy and diverse children playing together in a pediatric clinic setting. The children should represent different ethni.webp"
                               alt="Image"
                             />
                           </div>
@@ -180,7 +180,7 @@ const Index = () => {
                   <RightArrowWhite />
                 </div>
                 <h2 className="title clr-pri-1">
-                  Descubre por qué la gente viene conmigo
+                  Conoce la razón por la que confían en mí
                 </h2>
               </div>
             </div>
