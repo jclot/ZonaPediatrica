@@ -113,9 +113,7 @@ const About = () => {
                     data-wow-delay="0.3ms"
                     data-wow-duration="1000ms"
                   >
-                    Amet consectetur adipiscin elitsed eiusmod tempor incididunt
-                    labore et dolore magna aliqua. Quis ipsum suspendisse
-                    ultrices gravida. Risus commodo maecenas accumsan
+                    Soy la Dra. Tania Protti, médico pediatra con vocación por ayudar a los más pequeños y vulnerables. Me gradué como médico general en la UCIMED y completé con honores las especialidades en Pediatría y Hematología Pediátrica en la UCR. Como mamá, he complementado mis conocimientos con la práctica, obteniendo una perspectiva más amplia para apoyar a las familias en cada etapa del desarrollo de sus hijos. Entiendo que ser padre puede ser desafiante y estoy aquí para escuchar, orientar y responder sus inquietudes. Mi objetivo es ofrecer un entorno cálido y seguro, estableciendo una comunicación transparente para tomar juntos las mejores decisiones para sus hijos. Espero conocerlos pronto en mi consulta. Con cariño, Dra. Tania Protti Meléndez.
                   </p>
                   <h4 className="title-line">
                     Most Successful Results Institute For kindergarten Since

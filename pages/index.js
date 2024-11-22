@@ -92,7 +92,7 @@ const Index = () => {
                         <div className="box-feature">
                           <div className="image">
                             <img
-                              src="assets/images/DALL·E 2024-11-20 20.13.10 - An illustration of a group of happy and diverse children playing together in a pediatric clinic setting. The children should represent different ethni.webp"
+                              src="assets/images/common/slider-1.png"
                               alt="Image"
                             />
                           </div>
@@ -180,7 +180,7 @@ const Index = () => {
                   <RightArrowWhite />
                 </div>
                 <h2 className="title clr-pri-1">
-                  Conoce la razón por la que confían en mí
+                  Calidad y confianza respaldadas por experiencia e identidad.
                 </h2>
               </div>
             </div>
@@ -362,27 +362,23 @@ const Index = () => {
                 <div className="sc-about-content">
                   <div className="title-heading">
                     <div className="sub-heading clr-pri-3 f-mulish">
-                      <span className="inner-sub st-2">About Us</span>
+                      <span className="inner-sub st-2">Acerca de mí</span>
                       <RightArrow />
                     </div>
                     <h2 className="title clr-pri-2">
-                      We Learn Smart Way To Build Bright Futute For Your
-                      Children
+                      Vocación y trayectoria dedicadas al cuidado integral de los niños.
                     </h2>
                   </div>
                   <p className="wrap f-mulish st-1">
-                    Amet consectetur adipiscin elitsed eiusmod tempor incididunt
-                    labore et dolore magna aliqua. Quis ipsum suspendisse
-                    ultrices gravida. Risus commodo maecenas accumsan
+                    Soy la Dra. Tania Protti, médico pediatra con vocación por ayudar a los más pequeños. Me gradué de la UCIMED como médico general y completé con honores las especialidades en Pediatría y hematología pediátrica en la UCR.
                   </p>
                   <p className="wrap f-mulish st-2">
-                    Quis autem vel eum iure reprehenderit quiin ea voluptate
-                    velit esse quam nihil molestiae consequatur velillum
+                    Mi objetivo es brindar atención cálida y personalizada a cada niño y su familia.
                   </p>
                   <div className="box-btn fx">
                     <Link legacyBehavior href="/about">
                       <a className="fl-btn st-3">
-                        <span className="inner">learn more Us</span>
+                        <span className="inner">Conoce más sobre mí</span>
                       </a>
                     </Link>
                   </div>
