@@ -1,89 +1,103 @@
-import { useState } from "react";
+import React, { useContext } from "react";
 import { Accordion } from "react-bootstrap";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
+import AccordionContext from "react-bootstrap/AccordionContext";
+
+
+const ACTIVE_COLOR = "#1ab9ff";
+const INACTIVE_COLOR = "#223668";
+
+const CustomToggle = ({ children, eventKey }) => {
+  const { activeEventKey } = useContext(AccordionContext);
+
+  const decoratedOnClick = useAccordionButton(eventKey);
+  const isActive = activeEventKey === eventKey;
+
+  return (
+    <h6
+      onClick={decoratedOnClick}
+      style={{
+        backgroundColor: isActive ? ACTIVE_COLOR : INACTIVE_COLOR,
+        color: "white",
+        padding: "10px 15px",
+        cursor: "pointer",
+        borderRadius: "5px",
+        margin: "5px 0",
+      }}
+    >
+      {children}
+    </h6>
+  );
+};
+
 
 const ProgramAccordion = () => {
-  const [activeToggle, setActiveToggle] = useState("1st");
-  const setToggle = (value) =>
-      value === activeToggle ? setActiveToggle("") : setActiveToggle(value),
-    setActive = (value) => (value === activeToggle ? "active" : "");
   return (
     <Accordion defaultActiveKey="1st">
       <div className="flat-accordion">
-        <div className="flat-toggle ">
-          <Accordion.Toggle
-            as={"h6"}
-            onClick={() => setToggle("1st")}
-            eventKey="1st"
-            className={`toggle-title ${setActive("1st")}`}
-          >
-            Designing Better Links For Websites ?
-          </Accordion.Toggle>
-          <Accordion.Collapse as={"div"} eventKey="1st">
-            <div className="toggle-content">
-              <p>
-                Sed ut perspiciatis unde omnis natus error voluptatem
-                accusantium doloremque laudantium totam rem aperiam eaque quae
-                abile invents veritatis et quasi architecto beatae vitae dicta
-              </p>
-            </div>
-          </Accordion.Collapse>
+        <div className="flat-toggle">
+          <Accordion.Item eventKey="1st">
+            <CustomToggle eventKey="1st">
+              Designing Better Links For Websites?
+            </CustomToggle>
+            <Accordion.Collapse eventKey="1st">
+              <div className="toggle-content">
+                <p>
+                  Sed ut perspiciatis unde omnis natus error voluptatem
+                  accusantium doloremque laudantium totam rem aperiam eaque quae
+                  abile invents veritatis et quasi architecto beatae vitae dicta
+                </p>
+              </div>
+            </Accordion.Collapse>
+          </Accordion.Item>
         </div>
         <div className="flat-toggle">
-          <Accordion.Toggle
-            as={"h6"}
-            onClick={() => setToggle("2nd")}
-            eventKey="2nd"
-            className={`toggle-title ${setActive("2nd")}`}
-          >
-            Useful VS Code Extensions For Front-End ?
-          </Accordion.Toggle>
-          <Accordion.Collapse as={"div"} eventKey="2nd">
-            <div className="toggle-content">
-              <p>
-                Sed ut perspiciatis unde omnis natus error voluptatem
-                accusantium doloremque laudantium totam rem aperiam eaque quae
-                abile invents veritatis et quasi architecto beatae vitae dicta
-              </p>
-            </div>
-          </Accordion.Collapse>
+          <Accordion.Item eventKey="2nd">
+            <CustomToggle eventKey="2nd">
+              Useful VS Code Extensions For Front-End?
+            </CustomToggle>
+            <Accordion.Collapse eventKey="2nd">
+              <div className="toggle-content">
+                <p>
+                  Sed ut perspiciatis unde omnis natus error voluptatem
+                  accusantium doloremque laudantium totam rem aperiam eaque quae
+                  abile invents veritatis et quasi architecto beatae vitae dicta
+                </p>
+              </div>
+            </Accordion.Collapse>
+          </Accordion.Item>
         </div>
         <div className="flat-toggle">
-          <Accordion.Toggle
-            as={"h6"}
-            onClick={() => setToggle("3rd")}
-            eventKey="3rd"
-            className={`toggle-title ${setActive("3rd")}`}
-          >
-            Free Christmas Icon Sets And Vector Elements ?
-          </Accordion.Toggle>
-          <Accordion.Collapse as={"div"} eventKey="3rd">
-            <div className="toggle-content">
-              <p>
-                Sed ut perspiciatis unde omnis natus error voluptatem
-                accusantium doloremque laudantium totam rem aperiam eaque quae
-                abile invents veritatis et quasi architecto beatae vitae dicta
-              </p>
-            </div>
-          </Accordion.Collapse>
+          <Accordion.Item eventKey="3rd">
+            <CustomToggle eventKey="3rd">
+              Free Christmas Icon Sets And Vector Elements?
+            </CustomToggle>
+            <Accordion.Collapse eventKey="3rd">
+              <div className="toggle-content">
+                <p>
+                  Sed ut perspiciatis unde omnis natus error voluptatem
+                  accusantium doloremque laudantium totam rem aperiam eaque quae
+                  abile invents veritatis et quasi architecto beatae vitae dicta
+                </p>
+              </div>
+            </Accordion.Collapse>
+          </Accordion.Item>
         </div>
         <div className="flat-toggle">
-          <Accordion.Toggle
-            as={"h6"}
-            onClick={() => setToggle("4th")}
-            eventKey="4th"
-            className={`toggle-title ${setActive("4th")}`}
-          >
-            Better Links Websites Emails Guideline ?
-          </Accordion.Toggle>
-          <Accordion.Collapse as={"div"} eventKey="4th">
-            <div className="toggle-content">
-              <p>
-                Sed ut perspiciatis unde omnis natus error voluptatem
-                accusantium doloremque laudantium totam rem aperiam eaque quae
-                abile invents veritatis et quasi architecto beatae vitae dicta
-              </p>
-            </div>
-          </Accordion.Collapse>
+          <Accordion.Item eventKey="4th">
+            <CustomToggle eventKey="4th">
+              Better Links Websites Emails Guideline?
+            </CustomToggle>
+            <Accordion.Collapse eventKey="4th">
+              <div className="toggle-content">
+                <p>
+                  Sed ut perspiciatis unde omnis natus error voluptatem
+                  accusantium doloremque laudantium totam rem aperiam eaque quae
+                  abile invents veritatis et quasi architecto beatae vitae dicta
+                </p>
+              </div>
+            </Accordion.Collapse>
+          </Accordion.Item>
         </div>
       </div>
     </Accordion>
