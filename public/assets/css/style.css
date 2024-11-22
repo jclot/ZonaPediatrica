@@ -1102,13 +1102,13 @@ a:focus {
     /* color */
     --primary-color1: #fff;
     --primary-color2: #2b3c6b;
-    --primary-color3: #ff6666;
+    --primary-color3: #ff4a38;
     --primary-color4: #70747f;
-    --primary-color5: #b250fe;
+    --primary-color5: #8a06ab;
     --primary-color6: #1ab9ff;
     --primary-color7: #fcf9f4;
-    --primary-color8: #e6a72a;
-    --primary-color9: #fab319;
+    --primary-color8: #ef9d12;
+    --primary-color9: #edd42c;
 }
 
 /* Header
@@ -1184,7 +1184,7 @@ a:focus {
 
 @media (max-width: 767px) {
     #site-logo-mobile {
-        width: 30%;
+        width: 40%;
     }
 }
 
