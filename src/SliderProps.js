@@ -1,10 +1,4 @@
-import SwiperCore, {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Pagination,
-} from "swiper";
-SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 
 export const heroSlider = {
   loop: true,
@@ -13,6 +7,7 @@ export const heroSlider = {
     disableOnInteraction: false,
   },
 };
+
 export const themesflatcarousel = {
   loop: true,
   speed: 1400,
@@ -41,6 +36,7 @@ export const themesflatcarousel = {
     },
   },
 };
+
 export const fourSlider = {
   loop: true,
   speed: 1400,
@@ -64,11 +60,11 @@ export const fourSlider = {
     },
   },
 };
+
 export const twoSlider = {
   loop: true,
   speed: 1400,
   spaceBetween: 66,
-
   pagination: {
     el: ".owl-dots",
     clickable: true,
@@ -85,16 +81,17 @@ export const twoSlider = {
     },
   },
 };
+
 export const testimonialSlider = {
   loop: true,
   speed: 1400,
   spaceBetween: 90,
-
   pagination: {
     el: ".owl-dots",
     clickable: true,
   },
 };
+
 export const brandSlider = {
   loop: true,
   speed: 1400,
