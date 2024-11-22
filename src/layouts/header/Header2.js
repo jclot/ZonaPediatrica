@@ -39,7 +39,7 @@ const Header2 = () => {
                 <div id="site-logo" className="clearfix">
                   <Link legacyBehavior href="/">
                     <a className="logo">
-                      <img src="Versiones_Zona_Pediatrica_page-0001-removebg-preview.png" alt="Kinco" />
+                      <img src="assets/images/logo/Versiones_Zona_Pediatrica_page-0001-removebg-preview.png" alt="Kinco" />
                     </a>
                   </Link>
                 </div>
