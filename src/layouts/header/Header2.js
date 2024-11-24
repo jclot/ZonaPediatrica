@@ -50,12 +50,10 @@ const Header2 = () => {
                   <nav id="mainnav" className="mainnav ">
                     <ul className="menu">
                       <li className="inner">
-                        <Link legacyBehavior href="/">
-                          <a href="/">HOME</a>
-                          {/* <ul className="sub-menu">
-                        <Home />
-                      </ul> */}
-                        </Link>
+                        <a href="/">HOME</a>
+                        <ul className="sub-menu">
+                          <Home />
+                        </ul>
                       </li>
                       <li className="menu-item">
                         <About />

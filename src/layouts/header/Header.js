@@ -28,7 +28,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="inner jus-ct">
           <p className="clr-pri-1">
-            Horas de trabajo: Lunes - Jueves, Sabado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
+          Horas de trabajo: Lunes - Jueves, Sabado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
           </p>
         </div>
       </div>
@@ -51,12 +51,10 @@ const Header = () => {
                   <nav id="mainnav" className="mainnav st-2">
                     <ul className="menu">
                       <li className="inner">
-                        <Link legacyBehavior href="/">
-                          <a href="/">HOME</a>
-                          {/* <ul className="sub-menu">
-                        <Home />
-                      </ul> */}
-                        </Link>
+                        <a href="/">INICIO</a>
+                        <ul className="sub-menu">
+                          <Home />
+                        </ul>
                       </li>
                       <li className="menu-item">
                         <About />
