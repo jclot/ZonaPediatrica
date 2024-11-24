@@ -41,7 +41,7 @@ const Footer = () => {
                     <Link legacyBehavior href="/">
                       <a>
                         <img
-                          src="assets/images/logo/logofootert.png"
+                          src="assets/images/logo/Versiones_Zona_Pediatrica_page-0001-removebg-preview.png"
                           alt="kinco"
                         />
                       </a>
