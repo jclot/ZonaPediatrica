@@ -6,6 +6,7 @@ import { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [loader, setLoader] = useState(true);
+
   useEffect(() => {
     if (loader) {
       document.body.style.overflow = 'hidden';
@@ -30,19 +31,11 @@ const App = ({ Component, pageProps }: AppProps) => {
       document.documentElement.style.height = '';
     };
   }, [loader]);
+
   return (
     <Fragment>
       <Head>
         <title>Kinco - Kindergarten React NextJs Template</title>
-        <link rel="shortcut icon" href="assets/images/Favicon.png" />
-        <link
-          rel="apple-touch-icon-precomposed"
-          href="assets/images/Favicon.png"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       {loader ? (
         <PreLoader />
@@ -52,4 +45,5 @@ const App = ({ Component, pageProps }: AppProps) => {
     </Fragment>
   );
 };
+
 export default App;
