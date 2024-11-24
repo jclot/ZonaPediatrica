@@ -91,10 +91,12 @@ const Header1 = () => {
                 <nav id="mainnav" className="mainnav st-2">
                   <ul className="menu">
                     <li className="inner">
-                      <a href="/">HOME</a>
-                      {/* <ul className="sub-menu">
+                      <Link legacyBehavior href="/">
+                        <a href="/">HOME</a>
+                        {/* <ul className="sub-menu">
                         <Home />
                       </ul> */}
+                      </Link>
                     </li>
                     <li className="menu-item">
                       <About />
