@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Salsa&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* Bootstrap */
 @import "bootstrap.css";
+
+/* Estilos específicos */
 @import "owl.carousel.css";
 @import "font-awesome.css";
 @import "animate.css";
@@ -1178,12 +1180,16 @@ a:focus {
     width: 14%;
 }
 
+#logo-footer {
+    width: 35%;
+}
+
 #site-logo-mobile {
     width: 27%;
 }
 
 @media (max-width: 767px) {
-    #site-logo-mobile {
+    #site-logo-mobile, #logo-footer {
         width: 40%;
     }
 }
