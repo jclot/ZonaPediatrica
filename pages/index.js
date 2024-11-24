@@ -362,7 +362,7 @@ const Index = () => {
                 <div className="sc-about-content">
                   <div className="title-heading">
                     <div className="sub-heading clr-pri-3 f-mulish">
-                      <span className="inner-sub st-2">Acerca de mí</span>
+                      <span className="inner-sub st-2">ACERCA DE MÍ</span>
                       <RightArrow />
                     </div>
                     <h2 className="title clr-pri-2">
