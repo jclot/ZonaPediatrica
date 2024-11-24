@@ -51,7 +51,7 @@ const Header = () => {
                   <nav id="mainnav" className="mainnav st-2">
                     <ul className="menu">
                       <li className="inner">
-                        <a href="/">INICIO</a>
+                        <a href="#">INICIO</a>
                         <ul className="sub-menu">
                           <Home />
                         </ul>

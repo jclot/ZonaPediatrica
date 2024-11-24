@@ -91,7 +91,7 @@ const Header1 = () => {
                 <nav id="mainnav" className="mainnav st-2">
                   <ul className="menu">
                     <li className="inner">
-                      <a href="/">HOME</a>
+                      <a href="#">HOME</a>
                       <ul className="sub-menu">
                         <Home />
                       </ul>
