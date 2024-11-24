@@ -99,5 +99,5 @@ export const Shop = () => (
     </li>
   </Fragment>
 );
-export const About = () => <Link legacyBehavior href="/about">Acerca de mí</Link>;
+export const About = () => <Link legacyBehavior href="/about">ACERCA DE MÍ</Link>;
 export const Contact = () => <Link legacyBehavior href="/contact">CONTACTS</Link>;
