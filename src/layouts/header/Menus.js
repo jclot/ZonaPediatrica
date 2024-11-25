@@ -1,16 +1,6 @@
 import Link from "next/link";
 import { Fragment } from "react";
 
-export const Home = () => (
-  <Fragment>
-    <li>
-      <Link legacyBehavior href="/">Home 01</Link>
-    </li>
-    <li>
-      <Link legacyBehavior href="/home2">Home 02</Link>
-    </li>
-  </Fragment>
-);
 export const Pages = () => (
   <Fragment>
     <li>
@@ -99,5 +89,7 @@ export const Shop = () => (
     </li>
   </Fragment>
 );
+
+export const Home = () => <Link legacyBehavior href="/">INICIO</Link>
 export const About = () => <Link legacyBehavior href="/about">ACERCA DE MÍ</Link>;
 export const Contact = () => <Link legacyBehavior href="/contact">CONTACTS</Link>;
