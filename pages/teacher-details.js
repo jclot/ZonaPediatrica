@@ -75,13 +75,13 @@ const TeacherDetails = () => {
                 <div className="experience m-b38">
                   <h3>Personal Experience</h3>
                   <p>
-                  La Dra. Tania Protti ha trabajado como médica general en <span className="highlight-important">CENEBAIS (UCR-CCSS)</span> y completado residencias en pediatría y hematología pediátrica. Su experiencia incluye formación y práctica en instituciones como el <span className="highlight-important">Hospital Max Peralta</span>, el <span className="highlight-important">CENDEISSS (UCR-CCSS)</span> y el <span className="highlight-important">Hospital Nacional de Niños</span>.
+                    La Dra. Tania Protti ha trabajado como médica general en <span className="highlight-important">CENEBAIS (UCR-CCSS)</span> y completado residencias en pediatría y hematología pediátrica. Su experiencia incluye formación y práctica en instituciones como el <span className="highlight-important">Hospital Max Peralta</span>, el <span className="highlight-important">CENDEISSS (UCR-CCSS)</span> y el <span className="highlight-important">Hospital Nacional de Niños</span>.
                   </p>
                 </div>
                 <div className="professional">
                   <h3>Professional Skills</h3>
                   <p>
-                  La formación académica de la Dra. Tania Protti incluye un <span className="highlight-important">Bachillerato en Ciencias de la Salud</span>, una <span className="highlight-important">Licenciatura en Medicina y Cirugía</span>, así como especializaciones en <span className="highlight-important">Pediatría</span> y <span className="highlight-important">Hematología Pediátrica</span>.
+                    La formación académica de la Dra. Tania Protti incluye un <span className="highlight-important">Bachillerato en Ciencias de la Salud</span>, una <span className="highlight-important">Licenciatura en Medicina y Cirugía</span>, así como especializaciones en <span className="highlight-important">Pediatría</span> y <span className="highlight-important">Hematología Pediátrica</span>.
                   </p>
                 </div>
                 <div className="wrap-couter fx">

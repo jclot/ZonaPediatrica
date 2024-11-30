@@ -113,7 +113,7 @@ const About = () => {
                     data-wow-delay="0.3ms"
                     data-wow-duration="1000ms"
                   >
-                    Soy la Dra. Tania Protti, médico pediatra con vocación por ayudar a los más pequeños y vulnerables. Me gradué como médico general en la UCIMED y completé con honores las especialidades en Pediatría y Hematología Pediátrica en la UCR. Como mamá, he complementado mis conocimientos con la práctica, obteniendo una perspectiva más amplia para apoyar a las familias en cada etapa del desarrollo de sus hijos. 
+                    Soy la Dra. Tania Protti, médico pediatra con vocación por ayudar a los más pequeños y vulnerables. Me gradué como médico general en la UCIMED y completé con honores las especialidades en Pediatría y Hematología Pediátrica en la UCR. Como mamá, he complementado mis conocimientos con la práctica, obteniendo una perspectiva más amplia para apoyar a las familias en cada etapa del desarrollo de sus hijos.
                   </p>
                   <p
                     className="wrap f-mulish clr-pri-4  wow fadeIn animated"
