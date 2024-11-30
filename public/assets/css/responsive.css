@@ -803,6 +803,10 @@
         margin-top: 10px;
     }
 
+    .feature-register {
+        width: 92%;
+      }
+
 
     .dropdown ul {
         left: 0;
