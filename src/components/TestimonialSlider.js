@@ -13,9 +13,9 @@ const TestimonialSlider = () => {
         >
           <div className="coustom-padding">
             <div className="heading fx">
-              <div className="box-avt">
+              {/* <div className="box-avt">
                 <img src="assets/images/thumbnails/avt-quote.jpg" alt="Image" />
-              </div>
+              </div> */}
               <ul>
                 <li>
                   <h4 className="name-author clr-pri-2">Bradley Y. Grimes</h4>
@@ -44,12 +44,12 @@ const TestimonialSlider = () => {
         >
           <div className="coustom-padding">
             <div className="heading fx">
-              <div className="box-avt">
+              {/* <div className="box-avt">
                 <img
                   src="assets/images/thumbnails/avt-quote-2.jpg"
                   alt="Image"
                 />
-              </div>
+              </div> */}
               <ul>
                 <li>
                   <h4 className="name-author clr-pri-2">Bradley Y. Grimes</h4>
@@ -78,9 +78,9 @@ const TestimonialSlider = () => {
         >
           <div className="coustom-padding">
             <div className="heading fx">
-              <div className="box-avt">
+              {/* <div className="box-avt">
                 <img src="assets/images/thumbnails/avt-quote.jpg" alt="Image" />
-              </div>
+              </div> */}
               <ul>
                 <li>
                   <h4 className="name-author clr-pri-2">Bradley Y. Grimes</h4>
@@ -109,12 +109,12 @@ const TestimonialSlider = () => {
         >
           <div className="coustom-padding">
             <div className="heading fx">
-              <div className="box-avt">
+              {/* <div className="box-avt">
                 <img
                   src="assets/images/thumbnails/avt-quote-2.jpg"
                   alt="Image"
                 />
-              </div>
+              </div> */}
               <ul>
                 <li>
                   <h4 className="name-author clr-pri-2">Bradley Y. Grimes</h4>
