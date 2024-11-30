@@ -12,11 +12,10 @@ const TeacherDetails = () => {
               <div className="fx teacher-details">
                 <div className="teacher-infor">
                   <div className="content">
-                    <h3 className="name">Frank T. Norman</h3>
-                    <p className="job">English Teacher</p>
+                    <h3 className="name">Tania Protti</h3>
+                    <p className="job">Hematología Pediátrica y Pediatría</p>
                     <p className="sub f-mulish">
-                      Quis autem vel eum iure reprehenderit quiin ea voluptate
-                      velit esse quam nihile molestiae consequatur velillum
+                      La Dra. Tania Protti, pediatra y madre, brinda atención cálida y especializada para el bienestar de los niños.
                     </p>
                   </div>
                   <div className="teacher-social">
@@ -54,16 +53,12 @@ const TeacherDetails = () => {
                     </li>
                     <li>
                       <span className="f-mulish">
-                        Sedut perspiciatis unde omnis iste natus error sit
-                        volupta accusantium doloremque laudantium totam
+                        La consulta debe ser un espacio tranquilo y amigable para los niños, donde ellos puedan participar y los padres salgan con sus dudas resueltas.
                       </span>
                     </li>
                   </ul>
                   <p className="f-mulish">
-                    But I must explain to you how all this mistaken idea of
-                    denouncing pleasure and praising pain was born and I will
-                    give you a complete account of the system, and expound the
-                    actual
+                    Apasionada por la pediatría y la hematología pediátrica, soy también mamá de un niño con autismo, lo que me ha dado una perspectiva única y valiosa para acompañar a mis pacientes con empatía.
                   </p>
                   <ul className="box">
                     <li className="list fx">
@@ -80,32 +75,13 @@ const TeacherDetails = () => {
                 <div className="experience m-b38">
                   <h3>Personal Experience</h3>
                   <p>
-                    Waste ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi sed sagittis nisl. In vitae orci ante. Phasellus id
-                    libero mi. Praesent ipsum velit, aliquam et sodales eget,
-                    tincidunt lobortis massa. Duis luctus dapibus sem, nec
-                    scelerisque ante tempus lacinia. Suspendisse malesuada non
-                    nibh ac finibus. Vivamus sem tortor, molestie sit amet nibh
-                    eget, commodo mattis arcu.
-                  </p>
-                  <p>
-                    Integer dignissim dolor quis lorem semper, sit amet
-                    convallis ipsum dignissim. Sed diam quam, aliquam a
-                    fringilla at, lobortis sed velit. Cum natoque penatibus et
-                    magnis dis parturient montes nascetur ridiculus mus. Nulla
-                    iaculis enim id mauris pharetra laoreet.
+                  La Dra. Tania Protti ha trabajado como médica general en <span className="highlight-important">CENEBAIS (UCR-CCSS)</span> y completado residencias en pediatría y hematología pediátrica. Su experiencia incluye formación y práctica en instituciones como el <span className="highlight-important">Hospital Max Peralta</span>, el <span className="highlight-important">CENDEISSS (UCR-CCSS)</span> y el <span className="highlight-important">Hospital Nacional de Niños</span>.
                   </p>
                 </div>
                 <div className="professional">
                   <h3>Professional Skills</h3>
                   <p>
-                    Consectetur adipiscing elit. Morbi sed sagittis nisl. In
-                    vitae orci ante. Phasellus id libero mi. Praesent ipsum
-                    velit, aliquam et sodales eget, tincidunt lobortis massa.
-                    Duis luctus dapibus sem, nec scelerisque ante tempus
-                    lacinia. Suspendisse malesuada non nibh ac finibus. Vivamus
-                    sem tortor, molestie sit amet nibh eget, commodo mattis
-                    arcu.
+                  La formación académica de la Dra. Tania Protti incluye un <span className="highlight-important">Bachillerato en Ciencias de la Salud</span>, una <span className="highlight-important">Licenciatura en Medicina y Cirugía</span>, así como especializaciones en <span className="highlight-important">Pediatría</span> y <span className="highlight-important">Hematología Pediátrica</span>.
                   </p>
                 </div>
                 <div className="wrap-couter fx">
