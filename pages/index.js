@@ -36,7 +36,7 @@ const Index = () => {
                     {...heroSlider}
                     className="owl-carousel owl-theme none dots-none"
                   >
-                    <SwiperSlide className="owl-item">
+                    {/* <SwiperSlide className="owl-item">
                       <div className="item-slider-1">
                         <div className="box-content">
                           <div className="sub clr-pri-2">
@@ -98,7 +98,7 @@ const Index = () => {
                           </div>
                         </div>
                       </div>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide className="owl-item">
                       <div className="item-slider-1">
                         <div className="box-content">
@@ -180,7 +180,7 @@ const Index = () => {
                   <RightArrowWhite />
                 </div>
                 <h2 className="title clr-pri-1">
-                  Calidad y confianza respaldadas por experiencia e identidad.
+                  Calidad y confianza respaldadas por experiencia y identidad.
                 </h2>
               </div>
             </div>
@@ -408,14 +408,13 @@ const Index = () => {
                 <div className="themesflat-carousel clearfix">
                   <LatestProgramSlider />
                 </div>
-                {/*/.themesflat-carousel*/}
               </div>
             </div>
           </div>
         </div>
       </section>
-      <TfCounter />
-      <section className="tf-section tf-employee">
+      {/* <TfCounter /> */}
+      {/* <section className="tf-section tf-employee">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -535,14 +534,12 @@ const Index = () => {
                     </SwiperSlide>
                   </Swiper>
                 </div>
-                {/*/.themesflat-carousel*/}
               </div>
-              {/*/.slider-2*/}
             </div>
           </div>
         </div>
-      </section>
-      <section className="tf-section tf-gallery">
+      </section> */}
+      {/* <section className="tf-section tf-gallery">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
@@ -550,13 +547,12 @@ const Index = () => {
                 <div className="themesflat-carousel clearfix">
                   <PhotoGallerySlider />
                 </div>
-                {/*/.themesflat-carousel*/}
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="tf-section tf-service-2">
+      </section> */}
+      {/* <section className="tf-section tf-service-2">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
@@ -579,7 +575,6 @@ const Index = () => {
                       Features{" "}
                     </h2>
                   </div>
-                  {/*/.title-heading*/}
                   <p className="wrap f-mulish">
                     Sit amet consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolores magna aliqua suspendisse
@@ -716,8 +711,8 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="tf-section tf-feedback">
+      </section> */}
+      {/* <section className="tf-section tf-feedback">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -738,12 +733,11 @@ const Index = () => {
                 <div className="themesflat-carousel clearfix">
                   <TestimonialSlider />
                 </div>
-                {/*/.themesflat-carousel*/}
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="tf-section tf-register">
         <img
           src="assets/images/background/bg-register.png"
@@ -756,7 +750,7 @@ const Index = () => {
               <div className="title-heading st-5">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">Online Registations</span>
+                  <span className="inner-sub st-1">¡Agenda la cita de tu peque!</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
@@ -843,7 +837,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="tf-section tf-sc-blog2">
+      {/* <section className="tf-section tf-sc-blog2">
         <img
           className="feature-blog-1"
           src="assets/images/patternphoto/feauture-blog-1.png"
@@ -1046,7 +1040,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer2 />
     </Layout>
   );
