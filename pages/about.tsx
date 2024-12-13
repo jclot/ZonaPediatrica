@@ -326,7 +326,7 @@ const About = () => {
                         {/* </Link> */}
                       </h4>
                       <p className="wrap f-mulish">
-                        Afrontamos el miedo juntos, ayudando a los niños a ser valientes y a sentirse seguros.
+                        Afrontamos el miedo juntos, ayudando a los niños a ser valientes y a sentirse mas seguros.
                       </p>
                       {/* <Link legacyBehavior href="/events">
                         <a className="fl-btn st-13">

@@ -219,7 +219,7 @@ const Index = () => {
                     {/* </Link> */}
                   </h4>
                   <p className="wrap f-mulish">
-                    Amplia experiencia académica en pediatría y hematología pediátrica con honores.
+                    Amplia y destacada experiencia académica en pediatría y hematología pediátrica con honores
                   </p>
                   {/* <Link legacyBehavior href="/classes">
                     <a className="fl-btn st-13">
@@ -381,7 +381,7 @@ const Index = () => {
                     Mi objetivo es brindar atención cálida y personalizada a cada niño y su familia.
                   </p>
                   <div className="box-btn fx">
-                    <Link legacyBehavior  href="/about">
+                    <Link legacyBehavior href="/about">
                       <a className="fl-btn st-3">
                         <span className="inner">Conoce más sobre mí</span>
                       </a>
