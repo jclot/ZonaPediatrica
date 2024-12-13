@@ -143,16 +143,16 @@ const Index = () => {
                             </li>
                           </ul>
                           <div className="box-btn">
-                            {/* <Link legacyBehavior href="/contact">
-                              <div className="fl-btn st-12">
+                            <Link legacyBehavior href="/contact">
+                              <a className="fl-btn st-12">
                                 <span className="inner">Contáctame</span>
-                              </div>
+                              </a>
                             </Link>
                             <Link legacyBehavior href="/about">
-                              <div className="fl-btn st-1">
+                              <a className="fl-btn st-1">
                                 <span className="inner">Más información</span>
-                              </div>
-                            </Link> */}
+                              </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="box-feature">
@@ -381,11 +381,11 @@ const Index = () => {
                     Mi objetivo es brindar atención cálida y personalizada a cada niño y su familia.
                   </p>
                   <div className="box-btn fx">
-                    {/* <Link legacyBehavior href="/about">
+                    <Link legacyBehavior  href="/about">
                       <a className="fl-btn st-3">
                         <span className="inner">Conoce más sobre mí</span>
                       </a>
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
