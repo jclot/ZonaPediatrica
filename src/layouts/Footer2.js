@@ -66,7 +66,7 @@ const Footer2 = () => {
                       </li>
                       <li className="fx">
                         <a href="mailto:hotline@gmail.com">
-                          <i className="far fa-envelope" /> tania.protti@zona-pediatrica
+                          <i className="far fa-envelope" /> tania.protti@zona-pediatrica.com
                         </a>
                       </li>
                       <li className="fx">
