@@ -810,7 +810,7 @@ const Index = () => {
                   <div className="row-form st-1">
                     <input
                       type="text"
-                      placeholder="Time/Shift.........."
+                      placeholder="Espacios libres"
                       id="time-ship"
                       name="time-ship"
                     />
