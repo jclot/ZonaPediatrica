@@ -1134,7 +1134,7 @@
   background: var(--primary-color1);
   border-radius: 7px;
   font-size: 20px;
-  padding: 26px 200px 26px 30px;
+  padding: 26px 160px 26px 30px;
 }
 
 .subcribe-form form input::placeholder {
@@ -3804,7 +3804,7 @@
 }
 
 .infor-teacher-detail .wrap-couter .progress-couter {
-  padding: 40px 20px 38px 25px;
+  padding: 30px 20px 30px 20px;
 }
 
 /* pricing
