@@ -144,14 +144,14 @@ const Index = () => {
                           </ul>
                           <div className="box-btn">
                             <Link legacyBehavior href="/contact">
-                              <a className="fl-btn st-12">
+                              <div className="fl-btn st-12">
                                 <span className="inner">Contáctame</span>
-                              </a>
+                              </div>
                             </Link>
                             <Link legacyBehavior href="/about">
-                              <a className="fl-btn st-1">
+                              <div className="fl-btn st-1">
                                 <span className="inner">Más información</span>
-                              </a>
+                              </div>
                             </Link>
                           </div>
                         </div>
