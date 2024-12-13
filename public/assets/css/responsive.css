@@ -1172,6 +1172,12 @@
         font-size: 15px;
     }
 
+    .subcribe-form form input::placeholder {
+        font-size: 17px;
+    }
+
+
+
     .image.m-r30 {
         margin: 0;
     }
