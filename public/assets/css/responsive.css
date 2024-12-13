@@ -1049,7 +1049,7 @@
     }
 
     .fl-subcribe {
-        padding: 70px 30px 70px;
+        padding: 40px 30px 70px;
     }
 
     .tf-counter.st-2 {
@@ -1165,7 +1165,7 @@
     }
 
     #footer .fl-btn.st-7 {
-        padding: 0 30px 0 10px;
+        padding: 0 10px 0 10px;
     }
 
     #footer .fl-btn.st-7 span {
@@ -1180,6 +1180,7 @@
     #footer .fl-btn.st-7 .inner::after {
         right: -20px;
         font-size: 15px;
+        display: none;
     }
 
     .fl-subcribe .subcribe-form form input {
