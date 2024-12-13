@@ -34,7 +34,7 @@ const PageBanner = ({ pageName, pageTitle }: PageBannerProps) => {
                 <ul className="jus-ct">
                   <li>
                     <Link legacyBehavior href="/">
-                      <a className="f-rubik">Home</a>
+                      <a className="f-rubik">Inicio</a>
                     </Link>
                   </li>
                   <li>

@@ -35,7 +35,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Fragment>
       <Head>
-        <title>Kinco - Kindergarten React NextJs Template</title>
+        <title>Zona Pediátrica</title>
       </Head>
       {loader ? (
         <PreLoader />

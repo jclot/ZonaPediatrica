@@ -1,16 +1,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import {
-  About,
-  Blog,
-  Classes,
-  Contact,
-  Event,
   Home,
-  Pages,
-  Program,
-  Shop,
-  Teacher,
+  About,
+  Experience,
+  Schedule,
+  Contact
 } from "./Menus";
 
 const MobileMenu = () => {
@@ -33,7 +28,7 @@ const MobileMenu = () => {
       <div className="top-bar">
         <div className="inner jus-ct">
           <p className="clr-pri-1">
-          Horarios: Lun-Jue, Sáb 8am-12pm; Vie 8am-4pm
+            Horarios: Lun-Jue, Sáb 8am-12pm; Vie 8am-4pm
           </p>
         </div>
       </div>
@@ -58,7 +53,7 @@ const MobileMenu = () => {
                 </div>
                 <div className="nav-wrap"></div>
                 <div className="header-right fx">
-                  <div id="header-search">
+                  {/* <div id="header-search">
                     <a href="#" className="search-box header-search-icon">
                       <i className="far fa-search" />
                     </a>
@@ -83,7 +78,7 @@ const MobileMenu = () => {
                         <i className="fa fa-search" />
                       </button>
                     </form>
-                  </div>
+                  </div> */}
                   <div className="header-contact fx">
                     <a href="#" className="menu-bar-right header-menu">
                       <svg
@@ -155,20 +150,28 @@ const MobileMenu = () => {
           style={{ display: toggle ? "block" : "none" }}
         >
           <ul className="menu" id="mainnav">
-            <li className="menu-item-has-children">
-              <a href="#">HOME</a>
+            <li className="inner">
+              {/* <a href="#">HOME</a>
               <span
                 className={`btn-submenu ${activeBtn("Home")}`}
                 onClick={() => activeMenuSet("Home")}
               />
               <ul className="sub-menu" style={activeLi("Home")}>
                 <Home />
-              </ul>
+              </ul> */}
+              <Home />
             </li>
-            <li className="menu-item">
+            <li className="inner">
               <About />
             </li>
-            <li className="menu-item-has-children">
+            <li className="inner">
+              <Experience />
+            </li>
+            <li className="inner">
+              <Schedule />
+            </li>
+
+            {/* <li className="menu-item-has-children">
               <a>PAGES</a>
               <span
                 className={`btn-submenu ${activeBtn("PAGES")}`}
@@ -207,8 +210,8 @@ const MobileMenu = () => {
                 </li>
                 <Pages />
               </ul>
-            </li>
-            <li className="menu-item-has-children">
+            </li> */}
+            {/* <li className="menu-item-has-children">
               <a>Programs</a>
               <span
                 className={`btn-submenu ${activeBtn("Programs")}`}
@@ -217,8 +220,8 @@ const MobileMenu = () => {
               <ul className="sub-menu" style={activeLi("Programs")}>
                 <Program />
               </ul>
-            </li>
-            <li className="menu-item-has-children">
+            </li> */}
+            {/* <li className="menu-item-has-children">
               <a>BLOG</a>
               <span
                 className={`btn-submenu ${activeBtn("BLOG")}`}
@@ -227,8 +230,8 @@ const MobileMenu = () => {
               <ul className="sub-menu" style={activeLi("BLOG")}>
                 <Blog />
               </ul>
-            </li>
-            <li className="menu-item-has-children">
+            </li> */}
+            {/* <li className="menu-item-has-children">
               <a>SHOP</a>
               <span
                 className={`btn-submenu ${activeBtn("SHOP")}`}
@@ -237,7 +240,7 @@ const MobileMenu = () => {
               <ul className="sub-menu" style={activeLi("SHOP")}>
                 <Shop />
               </ul>
-            </li>
+            </li> */}
             <li className="inner">
               <Contact />
             </li>

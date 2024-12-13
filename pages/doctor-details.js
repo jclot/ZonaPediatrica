@@ -1,10 +1,10 @@
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layouts/Layout";
 
-const TeacherDetails = () => {
+const DoctorDetails = () => {
   return (
     <Layout bodyClass={"teacher"}>
-      <PageBanner pageName={"Teacher Details"} />
+      <PageBanner pageName={"Mí Experiencia"} />
       <section className="tf-section tf-teacher-details">
         <div className="container">
           <div className="row">
@@ -19,19 +19,13 @@ const TeacherDetails = () => {
                     </p>
                   </div>
                   <div className="teacher-social">
-                    <h4>Follow Me</h4>
+                    <h4>Sígueme</h4>
                     <div className="social">
-                      <a href="#">
+                      <a href="https://www.facebook.com/profile.php?id=61551428998686" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-facebook-f" />
                       </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-google-plus-g" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
+                      <a href="https://www.instagram.com/pediatricazona?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-instagram" />
                       </a>
                     </div>
                   </div>
@@ -49,11 +43,11 @@ const TeacherDetails = () => {
                 <div className="teacher-desc">
                   <ul className="fx m-b17">
                     <li className="style">
-                      <span>M</span>
+                      <span>L</span>
                     </li>
                     <li>
                       <span className="f-mulish">
-                        La consulta debe ser un espacio tranquilo y amigable para los niños, donde ellos puedan participar y los padres salgan con sus dudas resueltas.
+                        a consulta debe ser un espacio tranquilo y amigable para los niños, donde ellos puedan participar y los padres salgan con sus dudas resueltas.
                       </span>
                     </li>
                   </ul>
@@ -65,21 +59,21 @@ const TeacherDetails = () => {
                       <span>
                         <i className="far fa-envelope-open" />
                       </span>
-                      <span>Email Address</span>
+                      <span>Correo Electrónico</span>
                     </li>
-                    <li>support@gmail.com</li>
+                    <li>tania.protti@zona-pediatrica.com</li>
                   </ul>
                 </div>
               </div>
               <div className="infor-teacher-detail">
                 <div className="experience m-b38">
-                  <h3>Personal Experience</h3>
+                  <h3>Experiencia Personal</h3>
                   <p>
                     La Dra. Tania Protti ha trabajado como médica general en <span className="highlight-important">CENEBAIS (UCR-CCSS)</span> y completado residencias en pediatría y hematología pediátrica. Su experiencia incluye formación y práctica en instituciones como el <span className="highlight-important">Hospital Max Peralta</span>, el <span className="highlight-important">CENDEISSS (UCR-CCSS)</span> y el <span className="highlight-important">Hospital Nacional de Niños</span>.
                   </p>
                 </div>
                 <div className="professional">
-                  <h3>Professional Skills</h3>
+                  <h3>Habilidades Profesionales</h3>
                   <p>
                     La formación académica de la Dra. Tania Protti incluye un <span className="highlight-important">Bachillerato en Ciencias de la Salud</span>, una <span className="highlight-important">Licenciatura en Medicina y Cirugía</span>, así como especializaciones en <span className="highlight-important">Pediatría</span> y <span className="highlight-important">Hematología Pediátrica</span>.
                   </p>
@@ -104,7 +98,7 @@ const TeacherDetails = () => {
                         </span>
                         <canvas height={120} width={120} />
                       </div>
-                      <h4 className="heading-progress">Service Orientation</h4>
+                      <h4 className="heading-progress">Ambiente Amigable</h4>
                     </div>
                   </div>
                   <div
@@ -127,7 +121,7 @@ const TeacherDetails = () => {
                         </span>
                         <canvas height={120} width={120} />
                       </div>
-                      <h4 className="heading-progress">Time Management</h4>
+                      <h4 className="heading-progress">Atención meticulosa</h4>
                     </div>
                   </div>
                   <div
@@ -150,7 +144,7 @@ const TeacherDetails = () => {
                         </span>
                         <canvas height={120} width={120} />
                       </div>
-                      <h4 className="heading-progress">Critical Thinking</h4>
+                      <h4 className="heading-progress">Respeto y Confianza</h4>
                     </div>
                   </div>
                   <div
@@ -173,7 +167,7 @@ const TeacherDetails = () => {
                         </span>
                         <canvas height={120} width={120} />
                       </div>
-                      <h4 className="heading-progress">Critical Thinking</h4>
+                      <h4 className="heading-progress">Enfoque Analítico</h4>
                     </div>
                   </div>
                 </div>
@@ -185,4 +179,4 @@ const TeacherDetails = () => {
     </Layout>
   );
 };
-export default TeacherDetails;
+export default DoctorDetails;

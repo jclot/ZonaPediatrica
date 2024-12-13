@@ -2,16 +2,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Sidebar from "../../components/Sidebar";
 import {
-  About,
-  Blog,
-  Classes,
-  Contact,
-  Event,
   Home,
-  Pages,
-  Program,
-  Shop,
-  Teacher,
+  About,
+  Experience,
+  Schedule,
+  Contact
 } from "./Menus";
 
 const Header1 = () => {
@@ -91,12 +86,18 @@ const Header1 = () => {
                 <nav id="mainnav" className="mainnav st-2">
                   <ul className="menu">
                     <li className="inner">
-                        <Home />
+                      <Home />
                     </li>
-                    <li className="menu-item">
+                    <li className="inner">
                       <About />
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className="inner">
+                      <Experience />
+                    </li>
+                    <li className="inner">
+                      <Schedule />
+                    </li>
+                    {/* <li className="menu-item-has-children">
                       <a>PAGES</a>
                       <ul className="sub-menu">
                         <li className="inner-menu-item">
@@ -119,8 +120,8 @@ const Header1 = () => {
                         </li>
                         <Pages />
                       </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <a>Programs</a>
                       <ul className="sub-menu">
                         <Program />
@@ -137,7 +138,7 @@ const Header1 = () => {
                       <ul className="sub-menu">
                         <Shop />
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="inner">
                       <Contact />
                     </li>

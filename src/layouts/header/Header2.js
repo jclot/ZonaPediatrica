@@ -3,15 +3,11 @@ import { useEffect, useState } from "react";
 import HeaderSearchForm from "../../components/HeaderSearchForm";
 import Sidebar from "../../components/Sidebar";
 import {
-  About,
-  Blog,
-  Contact,
-  Event,
   Home,
-  Pages,
-  Program,
-  Shop,
-  Teacher,
+  About,
+  Experience,
+  Schedule,
+  Contact
 } from "./Menus";
 
 const Header2 = () => {
@@ -27,7 +23,7 @@ const Header2 = () => {
       <div className="top-bar">
         <div className="inner jus-ct">
           <p className="clr-pri-1">
-            Horas de trabajo: Lunes - Jueves, Sabado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
+            Horas de trabajo: Lunes - Jueves, Sábado, 08:00 am - 12:00 pm, Viernes, 08:00 am - 04:00 pm
           </p>
         </div>
       </div>
@@ -50,12 +46,18 @@ const Header2 = () => {
                   <nav id="mainnav" className="mainnav ">
                     <ul className="menu">
                       <li className="inner">
-                          <Home />
+                        <Home />
                       </li>
-                      <li className="menu-item">
+                      <li className="inner">
                         <About />
                       </li>
-                      <li className="menu-item-has-children">
+                      <li className="inner">
+                        <Experience />
+                      </li>
+                      <li classsName="inner">
+                        <Schedule />
+                      </li>
+                      {/* <li className="menu-item-has-children">
                         <a>PAGES</a>
                         <ul className="sub-menu">
                           <li className="inner-menu-item">
@@ -85,8 +87,8 @@ const Header2 = () => {
                           </li>
                           <Pages />
                         </ul>
-                      </li>
-                      <li className="menu-item-has-children">
+                      </li> */}
+                      {/* <li className="menu-item-has-children">
                         <a>Programs</a>
                         <ul className="sub-menu">
                           <Program />
@@ -103,7 +105,7 @@ const Header2 = () => {
                         <ul className="sub-menu">
                           <Shop />
                         </ul>
-                      </li>
+                      </li> */}
                       <li className="inner">
                         <Contact />
                       </li>
@@ -112,7 +114,7 @@ const Header2 = () => {
                   </nav>
                 </div>
                 <div className="header-right fx">
-                  <div id="header-search">
+                  {/* <div id="header-search">
                     <a
                       href="#"
                       className="search-box header-search-icon"
@@ -124,7 +126,7 @@ const Header2 = () => {
                       show={form}
                       handleClose={() => setForm(false)}
                     />
-                  </div>
+                  </div> */}
                   <div className="header-contact fx">
                     <div className="inner-contact fx">
                       <svg

@@ -858,6 +858,10 @@ h6 {
     color: var(--primary-color1);
 }
 
+#parents-say.clr-pri-2.title {
+    margin: 0;
+}
+
 .clr-pri-2 {
     color: var(--primary-color2);
 }
@@ -1189,7 +1193,9 @@ a:focus {
 }
 
 @media (max-width: 767px) {
-    #site-logo-mobile, #logo-footer {
+
+    #site-logo-mobile,
+    #logo-footer {
         width: 40%;
     }
 }
@@ -1805,6 +1811,7 @@ a:focus {
     background: url(../images/background/bg-footer-2.jpg) center center no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fcf9f4;
 }
 
 #footer a,
@@ -1850,6 +1857,13 @@ a:focus {
     background-color: var(--primary-color2);
     padding: 16px 0;
 }
+
+/* #new-box-clini, .box-content h6 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 13px;
+  } */
 
 .copy-right {
     line-height: 2;

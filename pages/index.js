@@ -18,6 +18,7 @@ import { fourSlider, heroSlider } from "../src/SliderProps";
 import { activeNavMenu } from "../src/utils";
 
 const Index = () => {
+
   useEffect(() => {
     activeNavMenu();
   }, []);
@@ -138,14 +139,14 @@ const Index = () => {
                             </li>
                             <li className="st-3 fx">
                               <i className="fas fa-check" />
-                              <p className="clr-pri-2">Medicina y Cirugia</p>
+                              <p className="clr-pri-2">Medicina y Cirugía</p>
                             </li>
                           </ul>
                           <div className="box-btn">
-                            <a href="#" className="fl-btn st-12">
+                            <a href="/contact" className="fl-btn st-12">
                               <span className="inner">Contáctame</span>
                             </a>
-                            <a href="#" className="fl-btn st-1">
+                            <a href="/about" className="fl-btn st-1">
                               <span className="inner">Más información</span>
                             </a>
                           </div>
@@ -180,7 +181,7 @@ const Index = () => {
                   <RightArrowWhite />
                 </div>
                 <h2 className="title clr-pri-1">
-                  Calidad y confianza respaldadas por experiencia y identidad.
+                  Calidad y confianza respaldadas por experiencia E identidad
                 </h2>
               </div>
             </div>
@@ -209,9 +210,9 @@ const Index = () => {
                 </div>
                 <div className="box-content">
                   <h4 className="title">
-                    <Link legacyBehavior href="/classes">
-                      <a>Formación</a>
-                    </Link>
+                    {/* <Link legacyBehavior href=""> */}
+                    <a>Formación</a>
+                    {/* </Link> */}
                   </h4>
                   <p className="wrap f-mulish">
                     Amplia experiencia académica en pediatría y hematología pediátrica con honores.
@@ -249,9 +250,9 @@ const Index = () => {
                 </div>
                 <div className="box-content">
                   <h4 className="title">
-                    <Link legacyBehavior href="/program">
-                      <a>Enfoque Personal</a>
-                    </Link>
+                    {/* <Link legacyBehavior href="/program"> */}
+                    <a>Enfoque Personal</a>
+                    {/* </Link> */}
                   </h4>
                   <p className="wrap f-mulish">
                     Combino mi experiencia profesional y como mamá para entender cada proceso del camino.
@@ -289,9 +290,9 @@ const Index = () => {
                 </div>
                 <div className="box-content">
                   <h4 className="title">
-                    <Link legacyBehavior href="/teacher">
-                      <a>Ambiente Amigable</a>
-                    </Link>
+                    {/* <Link legacyBehavior href="/teacher"> */}
+                    <a>Ambiente Amigable</a>
+                    {/* </Link> */}
                   </h4>
                   <p className="wrap f-mulish">
                     Espacio cálido, inclusivo y respetuoso que fomenta confianza y comodidad para todos.
@@ -329,9 +330,9 @@ const Index = () => {
                 </div>
                 <div className="box-content">
                   <h4 className="title">
-                    <Link legacyBehavior href="/events">
-                      <a>Confianza</a>
-                    </Link>
+                    {/* <Link legacyBehavior href="/events"> */}
+                    <a>Confianza</a>
+                    {/* </Link> */}
                   </h4>
                   <p className="wrap f-mulish">
                     Trabajo contigo para tomar decisiones informadas y vencer todos los temores juntos.
@@ -357,16 +358,16 @@ const Index = () => {
                   data-wow-delay="0.3ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="assets/images/pattern/about-us-3.png" alt="Image" />
+                  <img src="assets/images/common/about-us-3.png" alt="Image" />
                 </div>
                 <div className="sc-about-content">
                   <div className="title-heading">
                     <div className="sub-heading clr-pri-3 f-mulish">
-                      <span className="inner-sub st-2">ACERCA DE MÍ</span>
+                      <span className="inner-sub st-2">Acerca de mí</span>
                       <RightArrow />
                     </div>
                     <h2 className="title clr-pri-2">
-                      Vocación y trayectoria dedicadas al cuidado integral de los niños.
+                      Vocación y trayectoria dedicadas al cuidado integral de los niños
                     </h2>
                   </div>
                   <p className="wrap f-mulish st-1">
@@ -388,7 +389,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="tf-section tf-courses">
+      {/* <section className="tf-section tf-courses">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -412,7 +413,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <TfCounter /> */}
       {/* <section className="tf-section tf-employee">
         <div className="container">
@@ -750,11 +751,11 @@ const Index = () => {
               <div className="title-heading st-5">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">¡Agenda la cita de tu peque!</span>
+                  <span className="inner-sub st-1">Agenda tú cita</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
-                  Admission Going On ! Hurry Up To Admit Your Seat
+                  ¡Agenda la cita de tú peque!
                 </h2>
               </div>
             </div>
@@ -775,13 +776,13 @@ const Index = () => {
                       type="text"
                       id="name"
                       name="name"
-                      placeholder="Full Name.........."
+                      placeholder="Nombre Completo"
                     />
                   </div>
                   <div className="row-form st-1 mg-bt-20">
                     <input
                       type="text"
-                      placeholder="Progam.........."
+                      placeholder="Correo Electrónico"
                       id="progam"
                       name="progam"
                     />
@@ -828,7 +829,7 @@ const Index = () => {
                   </div>
                   <div className="row-form">
                     <button className="fl-btn st-14">
-                      <span className="inner">Enroll Courses</span>
+                      <span className="inner">Agendar tú cita</span>
                     </button>
                   </div>
                 </form>

@@ -6,7 +6,7 @@ import Layout from "../src/layouts/Layout";
 const TimeTable = () => {
   return (
     <Layout bodyClass={"about"}>
-      <PageBanner pageName={"Time Table"} />
+      <PageBanner pageName={"Horarios"} />
       <section className="tf-section tf-time-table">
         <div className="container-fluid">
           <div className="row">
@@ -14,11 +14,11 @@ const TimeTable = () => {
               <div className="title-heading st-3">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">Our Time Table</span>
+                  <span className="inner-sub st-1">Nuestra tabla de horarios</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
-                  We Have Awesome Class Schedule (Weekly 6 Days)
+                  Los mejores horarios para su disponibilidad
                 </h2>
               </div>
             </div>
@@ -31,9 +31,9 @@ const TimeTable = () => {
                 >
                   <Nav as={"ul"} className="menu-tab">
                     <Nav.Link eventKey={"1st"} as={"li"}>
-                      <span>1st Grade</span>
+                      <span>Diciembre</span>
                     </Nav.Link>
-                    <Nav.Link eventKey={"2nd"} as={"li"}>
+                    {/* <Nav.Link eventKey={"2nd"} as={"li"}>
                       <span>2nd Grade</span>
                     </Nav.Link>
                     <Nav.Link eventKey={"3rd"} as={"li"}>
@@ -47,474 +47,286 @@ const TimeTable = () => {
                     </Nav.Link>
                     <Nav.Link eventKey={"6th"} as={"li"}>
                       <span>6th Grade</span>
-                    </Nav.Link>
+                    </Nav.Link> */}
                   </Nav>
                   <Tab.Content className="content-tab">
                     <Tab.Pane eventKey={"1st"} className="content-inner">
                       <ul className="list-date fx">
                         <li>
-                          <span>Saturday</span>
+                          <span>Lunes</span>
                         </li>
                         <li>
-                          <span>Sunday</span>
+                          <span>Martes</span>
                         </li>
                         <li>
-                          <span>Monday</span>
+                          <span>Miércoles</span>
                         </li>
                         <li>
-                          <span>Tuesday</span>
+                          <span>Jueves</span>
                         </li>
                         <li>
-                          <span>Wednesday</span>
+                          <span>Viernes</span>
                         </li>
                         <li>
-                          <span>Thursday</span>
+                          <span>Sábado</span>
                         </li>
                         <li>
-                          <span>Friday</span>
+                          <span>Domingo</span>
                         </li>
                       </ul>
                       <ul className="calendar-box fx">
                         <li className="bg1">
-                          <p className="bold">Mathematics</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg2">
-                          <p className="bold">Arts &amp; Drawing</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg3">
-                          <p className="bold">Computer</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg4">
-                          <p className="bold">Magic English</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg5">
-                          <p className="bold">ICT Learning</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg6">
-                          <p className="bold">Language</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>08:00am - 09:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg7"></li>
                         <li className="bg5">
-                          <p className="bold">ICT Learning</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg1">
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg2">
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
                           <p>
                             <span>Teacher:</span>
-                            <span className="bold">Michel</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
+                        </li>
+                        <li className="bg3">
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
                           <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
+                        </li>
+                        <li className="bg4">
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
                           <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg5">
+                          <p className="bold">HORARIO</p>
+                          <p>09:00am - 10:00am</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg7"></li>
                         <li className="bg1">
-                          <p className="bold">Mathematics</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg6">
-                          <p className="bold">Language</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg3">
-                          <p className="bold">Computer</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg4">
-                          <p className="bold">Magic English</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg2">
-                          <p className="bold">Arts &amp; Drawing</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
-                        <li className="bg1">
-                          <p className="bold">Mathematics</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg7"></li>
                         <li className="bg3">
-                          <p className="bold">Computer</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
+                        </li>
+                        <li className="bg4">
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
                           <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
+                        </li>
+                        <li className="bg5">
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
                           <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg6">
+                          <p className="bold">HORARIO</p>
+                          <p>10:00am - 11:00am</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg7"></li>
                         <li className="bg5">
-                          <p className="bold">ICT Learning</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg6">
-                          <p className="bold">Language</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg7"></li>
-                        <li className="bg5">
-                          <p className="bold">ICT Learning</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg6">
-                          <p className="bold">Language</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg7"></li>
-                        <li className="bg1">
-                          <p className="bold">Mathematics</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg7"></li>
-                        <li className="bg4">
-                          <p className="bold">Magic English</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg2">
-                          <p className="bold">Arts &amp; Drawing</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
-                        <li className="bg7"></li>
                         <li className="bg1">
-                          <p className="bold">Mathematics</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
-                          </p>
-                        </li>
-                        <li className="bg2">
-                          <p className="bold">Arts &amp; Drawing</p>
-                          <p>07.30 - 08.15</p>
-                          <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg3">
-                          <p className="bold">Computer</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
                         <li className="bg4">
-                          <p className="bold">Magic English</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>11:00am - 12:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg4">
+                          <p className="bold">HORARIO</p>
+                          <p>12:00pm - 01:00pm</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
                         <li className="bg5">
-                          <p className="bold">ICT Learning</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>01:00pm - 02:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
                         <li className="bg6">
-                          <p className="bold">Language</p>
-                          <p>07.30 - 08.15</p>
+                          <p className="bold">HORARIO</p>
+                          <p>02:00pm - 03:00pm</p>
                           <p>
-                            <span>Teacher:</span>
-                            <span className="bold">Michel</span>
-                          </p>
-                          <p>
-                            <span>Room:</span>
-                            <span className="bold">40G</span>
-                          </p>
-                          <p>
-                            <span>Level:</span>
-                            <span className="bold">All Levels</span>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
                           </p>
                         </li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
+                        <li className="bg1">
+                          <p className="bold">HORARIO</p>
+                          <p>03:00pm - 04:00pm</p>
+                          <p>
+                            <span>Médico:</span>
+                            <span className="bold">Dra. Tania Protti</span>
+                          </p>
+                        </li>
+                        <li className="bg7"></li>
+                        <li className="bg7"></li>
                       </ul>
                     </Tab.Pane>
                     <Tab.Pane eventKey={"2nd"} className="content-inner">

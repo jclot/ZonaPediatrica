@@ -10,7 +10,7 @@ import { fourSlider } from "../src/SliderProps";
 const About = () => {
   return (
     <Layout bodyClass={"about"}>
-      <PageBanner pageName={"About Us"} />
+      <PageBanner pageName={"Acerca de mí"} />
       <section className="tf-section tf-about">
         <div className="container">
           <div className="row">
@@ -46,12 +46,12 @@ const About = () => {
                 <div className="image p-l70">
                   <img src="assets/images/common/sc-about3.jpg" alt="Images" />
                 </div>
-                <div
+                {/* <div
                   className="box-parents wow fadeInUp animated"
                   data-wow-delay="0.3ms"
                   data-wow-duration="1200ms"
                 >
-                  <h5 className="clr-pri-2 title">
+                  <h5 className="clr-pri-2 title" id="parents-say">
                     <span className="clr-pri-3">25638+</span>Parents Say About
                     Our School
                   </h5>
@@ -93,18 +93,18 @@ const About = () => {
                       />
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xl-5 col-lg-5 col-md-12 col-12">
               <div className="sc-about-2 p-t19">
                 <div className="title-heading">
                   <div className="sub-heading clr-pri-3 f-mulish">
-                    <span className="inner-sub st-2">About Us</span>
+                    <span className="inner-sub st-2">Acerca de Mí</span>
                     <RightArrow />
                   </div>
                   <h2 className="title clr-pri-2">
-                    We Learn Smart Way To Build Bright Future
+                    Descubre mi trayectoria y pasión por lo que hago
                   </h2>
                 </div>
                 <div className="inner">
@@ -120,9 +120,9 @@ const About = () => {
                     data-wow-delay="0.3ms"
                     data-wow-duration="1000ms"
                   >
-                    Entiendo que ser padre puede ser desafiante y estoy aquí para escuchar, orientar y responder sus inquietudes. Mi objetivo es ofrecer un entorno cálido y seguro, estableciendo una comunicación transparente para tomar juntos las mejores decisiones para sus hijos. Espero conocerlos pronto en mi consulta. Con cariño, Dra. Tania Protti Meléndez.
+                    Entiendo que ser padre puede ser desafiante y estoy aquí para escuchar, orientar y responder sus inquietudes.
                   </p>
-                  <h4 className="title-line">
+                  {/* <h4 className="title-line">
                     Most Successful Results Institute For kindergarten Since
                     2021
                   </h4>
@@ -143,10 +143,10 @@ const About = () => {
                       <i className="fas fa-check" />
                       <p className="clr-pri-2">Event &amp; Party</p>
                     </li>
-                  </ul>
-                  <Link legacyBehavior href="/testimonials">
+                  </ul> */}
+                  <Link legacyBehavior href="/doctor-details">
                     <a className="fl-btn st-11">
-                      <span className="inner">learn more Us</span>
+                      <span className="inner">Mas sobre mí</span>
                     </a>
                   </Link>
                 </div>
@@ -162,11 +162,11 @@ const About = () => {
               <div className="title-heading st-3">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">Our Activities</span>
+                  <span className="inner-sub st-1">Decálogo</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
-                  We Do Something Better For Bright Children Future Activities
+                  Principios esenciales para ofrecer respeto, confianza y atención paciente
                 </h2>
               </div>
             </div>
@@ -199,19 +199,18 @@ const About = () => {
                     </div>
                     <div className="box-content">
                       <h4 className="title">
-                        <Link legacyBehavior href="/classes">
-                          <a>Study &amp; Game</a>
-                        </Link>
+                        {/* <Link legacyBehavior href="/classes"> */}
+                        <a>Valor a la Confianza</a>
+                        {/* </Link> */}
                       </h4>
                       <p className="wrap f-mulish">
-                        Sed ut perspiciatis unde omnis iste natu voluptatem
-                        accus antium dolorem
+                        Construir una relación sólida basada en la confianza mutua, esencial para el bienestar del niño.
                       </p>
-                      <Link legacyBehavior href="/classes">
+                      {/* <Link legacyBehavior href="/classes">
                         <a className="fl-btn st-13">
                           <span className="inner">read more</span>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -239,19 +238,18 @@ const About = () => {
                     </div>
                     <div className="box-content">
                       <h4 className="title">
-                        <Link legacyBehavior href="/program">
-                          <a>Event &amp; Programs</a>
-                        </Link>
+                        {/* <Link legacyBehavior href="/program"> */}
+                        <a>Paciencia y Cuidado</a>
+                        {/* </Link> */}
                       </h4>
                       <p className="wrap f-mulish">
-                        Sed ut perspiciatis unde omnis iste natu voluptatem
-                        accus antium dolorem
+                        Cada evaluación debe realizarse con paciencia y atención, priorizando siempre el bienestar del niño.
                       </p>
-                      <Link legacyBehavior href="/program">
+                      {/* <Link legacyBehavior href="/program">
                         <a className="fl-btn st-13">
                           <span className="inner">read more</span>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -281,19 +279,18 @@ const About = () => {
                     </div>
                     <div className="box-content">
                       <h4 className="title">
-                        <Link legacyBehavior href="/teacher">
-                          <a>Competitions</a>
-                        </Link>
+                        {/* <Link legacyBehavior href="/teacher"> */}
+                        <a>Trabajo en Equipo</a>
+                        {/* </Link> */}
                       </h4>
                       <p className="wrap f-mulish">
-                        Sed ut perspiciatis unde omnis iste natu voluptatem
-                        accus antium dolorem
+                        Colaboramos estrechamente con padres y profesionales para ofrecer un cuidado integral y efectivo.
                       </p>
-                      <Link legacyBehavior href="/teacher">
+                      {/* <Link legacyBehavior href="/teacher">
                         <a className="fl-btn st-13">
                           <span className="inner">read more</span>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -324,19 +321,18 @@ const About = () => {
                     </div>
                     <div className="box-content">
                       <h4 className="title">
-                        <Link legacyBehavior href="/events">
-                          <a>Outdoor Games</a>
-                        </Link>
+                        {/* <Link legacyBehavior href="/events"> */}
+                        <a>Superando el Miedo</a>
+                        {/* </Link> */}
                       </h4>
                       <p className="wrap f-mulish">
-                        Sed ut perspiciatis unde omnis iste natu voluptatem
-                        accus antium dolorem
+                        Afrontamos el miedo juntos, ayudando a los niños a ser valientes y a sentirse seguros.
                       </p>
-                      <Link legacyBehavior href="/events">
+                      {/* <Link legacyBehavior href="/events">
                         <a className="fl-btn st-13">
                           <span className="inner">read more</span>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -345,8 +341,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <TfCounter />
-      <section className="tf-section tf-employee">
+      {/* <TfCounter /> */}
+      {/* <section className="tf-section tf-employee">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -522,13 +518,11 @@ const About = () => {
                     </SwiperSlide>
                   </Swiper>
                 </div>
-                {/*/.themesflat-carousel*/}
               </div>
-              {/*/.slider-2*/}
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="tf-sc-contact">
         <div className="container-fluid">
           <div className="row">
@@ -540,18 +534,17 @@ const About = () => {
               >
                 <div className="wrap">
                   <h2 className="title clr-pri-1">
-                    Ready To Admit Your Child ?
+                    Listo para agendar tú cita?
                   </h2>
                   <p className="sub clr-pri-1 f-mulish">
-                    Amet consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore
+                    No pierdas tiempo, asegura tú espacio y recibe la atención que necesitas.
                   </p>
                 </div>
                 <div className="inner-sc-contact">
                   <div className="box-btn">
                     <Link legacyBehavior href="/contact">
                       <a className="fl-btn st-9">
-                        <span className="inner">Enroll Now</span>
+                        <span className="inner">AGENDAR CITA</span>
                       </a>
                     </Link>
                   </div>
@@ -583,7 +576,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="tf-section tf-feedback">
+      {/* <section className="tf-section tf-feedback">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -602,12 +595,11 @@ const About = () => {
             <div className="col-12 pd0-135">
               <div className="slider-fb">
                 <TestimonialSlider />
-                {/*/.themesflat-carousel*/}
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

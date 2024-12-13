@@ -5,7 +5,7 @@ import Layout from "../src/layouts/Layout";
 const Contact = () => {
   return (
     <Layout bodyClass={"contact"}>
-      <PageBanner pageName={"Contact"} pageTitle={"Contact Us"} />
+      <PageBanner pageName={"Contacto"} pageTitle={"Contacto"} />
 
       <section className="tf-section tf-faq">
         <div className="container">
@@ -14,11 +14,11 @@ const Contact = () => {
               <div className="title-heading st-2">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">Need Any Support</span>
+                  <span className="inner-sub st-1">¿Necesitas ayuda?</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
-                  We Are Ready To Help You For Your’s Informations
+                  Estamos aquí para guiarte en cada paso de tú camino
                 </h2>
               </div>
             </div>
@@ -32,20 +32,19 @@ const Contact = () => {
                   <img src="assets/images/common/sc-faq1.png" alt="Image" />
                 </div>
                 <div className="content">
-                  <h4>Supports and Info</h4>
+                  <h4>Soporte y Información</h4>
                   <p className="desc">
-                    Edipiscin elitsed eiusmod incididunt dolore magna
-                    suspendisse
+                    Brindamos asistencia rápida y clara para resolver tus dudas.
                   </p>
-                  <a href="#" className="fl-btn st-5">
+                  {/* <a href="#" className="fl-btn st-5">
                     <span className="inner">Contact Us</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div
-                className="sc-faq active wow fadeIn animated"
+                className="sc-faq wow fadeIn animated"
                 data-wow-delay="0.3ms"
                 data-wow-duration="1200ms"
               >
@@ -53,14 +52,13 @@ const Contact = () => {
                   <img src="assets/images/common/sc-faq2.png" alt="Image" />
                 </div>
                 <div className="content">
-                  <h4>News and Updates</h4>
+                  <h4>Noticias y Actualizaciones</h4>
                   <p className="desc">
-                    Edipiscin elitsed eiusmod incididunt dolore magna
-                    suspendisse
+                    Mantente informado con nuestras últimas novedades y actualizaciones.
                   </p>
-                  <a href="#" className="fl-btn st-5">
+                  {/* <a href="#" className="fl-btn st-5">
                     <span className="inner">Contact Us</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -74,14 +72,13 @@ const Contact = () => {
                   <img src="assets/images/common/sc-faq3.png" alt="Image" />
                 </div>
                 <div className="content">
-                  <h4>Events and Programs</h4>
+                  <h4>Eventos y Citas</h4>
                   <p className="desc">
-                    Edipiscin elitsed eiusmod incididunt dolore magna
-                    suspendisse
+                    Consulta nuestros eventos y agenda tus citas de manera fácil y rápida.
                   </p>
-                  <a href="#" className="fl-btn st-5">
+                  {/* <a href="#" className="fl-btn st-5">
                     <span className="inner">Contact Us</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -94,15 +91,14 @@ const Contact = () => {
             <div className="col-md-5">
               <div className="title-heading">
                 <div className="sub-heading clr-pri-3 f-mulish">
-                  <span className="inner-sub">Contact Us</span>
+                  <span className="inner-sub">Contáctame</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2 m-b26">
-                  Feel Free To Contact Us For More Info
+                  Ten la libertad de preguntar lo que sea
                 </h2>
                 <p className="f-mulish">
-                  Consectetur adipiscin elitsed eiusmod tempor incidide labore
-                  magna aliqua suspendisse gravida commodo
+                  Si tienes dudas, no dudes en preguntar. Estoy aquí para ayudarte en todo lo que necesites.
                 </p>
               </div>
               <div className="wrap-contact">
@@ -124,8 +120,8 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="content">
-                    <p>Address</p>
-                    <h4>55 Main Street, New York</h4>
+                    <p>Dirección</p>
+                    <h4>Edificio Latitud Dent, C308</h4>
                   </div>
                 </div>
                 <div className="fx Email">
@@ -147,8 +143,8 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="content">
-                    <p>Email Address</p>
-                    <h4>support@gmail.com</h4>
+                    <p>Correo Electrónico</p>
+                    <h4>tania.protti@zona-pediatrica.com</h4>
                   </div>
                 </div>
                 <div className="fx phone">
@@ -192,7 +188,7 @@ const Contact = () => {
           <div className="flat-map">
             <iframe
               className="map-content wow fadeInUp   animated"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.30210514409!2d144.9550716623184!3d-37.818421643591336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20%C3%9Ac!5e0!3m2!1svi!2s!4v1631871760998!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.968709289297!2d-84.05968949999999!3d9.9365615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTYnMTEuNiJOIDg0wrAwMyczNC45Ilc!5e0!3m2!1ses!2scr!4v1734069676114!5m2!1ses!2scr"
               width={1720}
               height={655}
               style={{
@@ -211,7 +207,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="form-message">
-                <h2 className="heading">Leave a Message</h2>
+                <h2 className="heading">Deja un mensaje</h2>
                 <form
                   action="contact/contact-process4.php"
                   method="post"
@@ -222,7 +218,7 @@ const Contact = () => {
                     <fieldset className="name">
                       <input
                         type="text"
-                        placeholder="Full Name Here"
+                        placeholder="Nombre Completo"
                         required=""
                         name="name"
                         className="name"
@@ -232,7 +228,7 @@ const Contact = () => {
                     <fieldset className="email">
                       <input
                         type="email"
-                        placeholder="Email Address"
+                        placeholder="Correo Electrónico"
                         required=""
                         name="mail"
                         className="mail"
@@ -242,7 +238,7 @@ const Contact = () => {
                     <fieldset className="phone">
                       <input
                         type="number"
-                        placeholder="Phone Number"
+                        placeholder="Número telefónico"
                         required=""
                         name="number"
                         className="number"
@@ -252,15 +248,15 @@ const Contact = () => {
                     <fieldset className="select-wrap" role="group">
                       <div className="select">
                         <select name="subject" id="subject">
-                          <option value="Please Select">Subject</option>
-                          <option value="services1">Subject 01</option>
-                          <option value="services2">Subject 02</option>
+                          <option value="Please Select">Elije una opcion</option>
+                          <option value="services1">Cita</option>
+                          <option value="services2">Pregunta</option>
                         </select>
                       </div>
                     </fieldset>
                     <fieldset className="message">
                       <textarea
-                        placeholder="Write Message"
+                        placeholder="Escribe tú mensaje"
                         rows={5}
                         tabIndex={4}
                         name="messagewr2"
@@ -271,7 +267,7 @@ const Contact = () => {
                     </fieldset>
                     <div className="wrap-btn">
                       <button type="submit" className="fl-btn st-6">
-                        <span className="inner">Send message</span>
+                        <span className="inner">Enviar mensaje</span>
                       </button>
                     </div>
                   </div>

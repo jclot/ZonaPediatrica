@@ -133,20 +133,20 @@ const FAQs = () => {
                   <Tab.Content className="content-tab">
                     <Tab.Pane eventKey={"General"}>
                       <div className="content-inner">
-                        <FaqAccordion />
+                        {/* <FaqAccordion /> */}
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey={"Courses"}>
-                      <FaqAccordion />
+                      {/* <FaqAccordion /> */}
                     </Tab.Pane>
                     <Tab.Pane eventKey={"News"}>
-                      <FaqAccordion />
+                      {/* <FaqAccordion /> */}
                     </Tab.Pane>
                     <Tab.Pane eventKey={"Team"}>
-                      <FaqAccordion />
+                      {/* <FaqAccordion /> */}
                     </Tab.Pane>
                     <Tab.Pane eventKey={"Student"}>
-                      <FaqAccordion />
+                      {/* <FaqAccordion /> */}
                     </Tab.Pane>
                   </Tab.Content>
                 </div>
