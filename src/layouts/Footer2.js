@@ -154,8 +154,8 @@ const Footer2 = () => {
                       <ul className="box-content" id="new-box-clinic">
                         <li>
                           <h6 className="title">
-                            <Link legacyBehavior href="https://www.mayoclinic.org/medical-professionals/pediatrics/news">
-                              <a target="_blank" rel="noopener noreferrer">Líder en salud, novedades recientes</a>
+                            <Link legacyBehavior href="https://www.google.com/search?sca_esv=8f1ce1ec8e583385&rlz=1C1UEAD_enUS1103US1103&sxsrf=ADLYWIKFgSqE2UvEgMzvg_Kn1lncGAs18A:1734119686374&q=pediatria+news+costa+rica&tbm=nws&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgacM8wnpugOpoilxhR0Lwp7B-Gky1aJetEssIbsXJdQXx8-b02rG8AuxLAcut2B7OhfDq0qH-CT4VqIc_VIhHa_i6lg6zT8rXgNG_NQ4sXCFUgI6oR9Ewyz-_wQvSDOJ1q2o8X9yW5iYAvEZat6DzjYdlv8Fz2zG0jvi6J4TBcYrY502b&sa=X&ved=2ahUKEwis2J2fw6WKAxXvg4QIHfXFPXYQ0pQJegQIEhAB&biw=1745&bih=859&dpr=1.1s">
+                              <a target="_blank" rel="noopener noreferrer">Novedades mas recientes en la salud</a>
                             </Link>
                           </h6>
                         </li>
@@ -163,7 +163,7 @@ const Footer2 = () => {
                           <Link legacyBehavior href="/blog-grid">
                             <a className="fx meta-news clr-pri-6">
                               <i className="far fa-calendar-alt" />
-                              13 dec 2024
+                              diciembre 2024
                             </a>
                           </Link>
                         </li>
