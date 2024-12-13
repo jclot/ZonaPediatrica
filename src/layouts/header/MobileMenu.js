@@ -249,9 +249,11 @@ const MobileMenu = () => {
                 <Shop />
               </ul>
             </li> */}
-            <li className="inner">
-              <Contact />
-            </li>
+            <Link legacyBehavior href="/contact">
+              <li className="inner">
+                <Contact />
+              </li>
+            </Link>
           </ul>
           {/* /.menu */}
         </nav>
