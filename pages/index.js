@@ -143,12 +143,16 @@ const Index = () => {
                             </li>
                           </ul>
                           <div className="box-btn">
-                            <a href="/contact" className="fl-btn st-12">
-                              <span className="inner">Contáctame</span>
-                            </a>
-                            <a href="/about" className="fl-btn st-1">
-                              <span className="inner">Más información</span>
-                            </a>
+                            <Link legacyBehavior href="/contact">
+                              <a className="fl-btn st-12">
+                                <span className="inner">Contáctame</span>
+                              </a>
+                            </Link>
+                            <Link legacyBehavior href="/about">
+                              <a className="fl-btn st-1">
+                                <span className="inner">Más información</span>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="box-feature">
