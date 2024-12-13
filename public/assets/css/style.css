@@ -481,7 +481,6 @@ input[type="reset"],
 input[type="submit"] {
     line-height: 1;
     cursor: pointer;
-    -webkit-appearance: button;
     border: 0;
 }
 
@@ -496,10 +495,10 @@ input[type="radio"] {
     /* Addresses excess padding in IE8/9 */
 }
 
-input[type="search"] {
-    -webkit-appearance: textfield;
-    /* Addresses appearance set to searchfield in S5, Chrome */
-}
+/* input[type="search"] { */
+/* -webkit-appearance: textfield; */
+/* Addresses appearance set to searchfield in S5, Chrome */
+/* } */
 
 input[type="search"]::-webkit-search-decoration {
     /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -666,7 +665,6 @@ input[type="submit"] {
     color: var(--primary-color1);
     border-radius: 5px;
     display: inline-block;
-    -webkit-appearance: none;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
