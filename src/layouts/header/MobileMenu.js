@@ -150,8 +150,9 @@ const MobileMenu = () => {
           style={{ display: toggle ? "block" : "none" }}
         >
           <ul className="menu" id="mainnav">
-            <li className="inner">
-              {/* <a href="#">HOME</a>
+            <Link legacyBehavior href="/">
+              <li className="inner">
+                {/* <a href="#">HOME</a>
               <span
                 className={`btn-submenu ${activeBtn("Home")}`}
                 onClick={() => activeMenuSet("Home")}
@@ -159,17 +160,24 @@ const MobileMenu = () => {
               <ul className="sub-menu" style={activeLi("Home")}>
                 <Home />
               </ul> */}
-              <Home />
-            </li>
-            <li className="inner">
-              <About />
-            </li>
-            <li className="inner">
-              <Experience />
-            </li>
-            <li className="inner">
-              <Schedule />
-            </li>
+                <Home />
+              </li>
+            </Link>
+            <Link legacyBehavior href="/about">
+              <li className="inner">
+                <About />
+              </li>
+            </Link>
+            <Link legacyBehavior href="/doctor-details">
+              <li className="inner">
+                <Experience />
+              </li>
+            </Link>
+            <Link legacyBehavior href="/time-table">
+              <li className="inner">
+                <Schedule />
+              </li>
+            </Link>
 
             {/* <li className="menu-item-has-children">
               <a>PAGES</a>
