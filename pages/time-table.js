@@ -14,7 +14,7 @@ const TimeTable = () => {
               <div className="title-heading st-3">
                 <div className="sub-heading clr-pri-3 f-mulish">
                   <LeftArrow />
-                  <span className="inner-sub st-1">Nuestra tabla de horarios</span>
+                  <span className="inner-sub st-1">Tabla de horarios</span>
                   <RightArrow />
                 </div>
                 <h2 className="title clr-pri-2">
