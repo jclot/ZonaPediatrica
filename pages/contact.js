@@ -32,7 +32,7 @@ const Contact = () => {
                   <img src="assets/images/common/sc-faq1.png" alt="Image" />
                 </div>
                 <div className="content">
-                  <h4>Soporte y Información</h4>
+                  <h4>Soporte e Información</h4>
                   <p className="desc">
                     Brindamos asistencia rápida y clara para resolver tus dudas.
                   </p>
@@ -247,13 +247,60 @@ const Contact = () => {
                     </fieldset>
                     <fieldset className="select-wrap" role="group">
                       <div className="select">
-                        <select name="subject" id="subject">
-                          <option value="Please Select">Elije una opcion</option>
+                        <select
+                          name="subject"
+                          id="subject"
+                          onChange={(e) => {
+                            const citaOptions = document.getElementById("cita-options");
+                            const horarioOptions = document.getElementById("horario-options");
+                            if (e.target.value === "services1") {
+                              citaOptions.style.display = "block";
+                              horarioOptions.style.display = "block";
+                            } else {
+                              citaOptions.style.display = "none";
+                              horarioOptions.style.display = "none";
+                            }
+                          }}
+                          required
+                        >
+                          <option value="Please Select" unselectable="on" >Elije una opcion</option>
                           <option value="services1">Cita</option>
                           <option value="services2">Pregunta</option>
                         </select>
                       </div>
                     </fieldset>
+                    {/* Nuevo select que aparece al elegir "Cita" */}
+                    <fieldset
+                      className="select-wrap"
+                      role="group"
+                      id="cita-options"
+                      style={{ display: "none" }}
+                    >
+                      <div className="select">
+                        <select name="cita-details" id="cita-details" required>
+                          <option value="Please Select">Elije una cita</option>
+                          <option value="consulta-general">Consulta General</option>
+                          <option value="control-medico">Control Médico</option>
+                          <option value="seguimiento">Seguimiento</option>
+                        </select>
+                      </div>
+                    </fieldset>
+                    <fieldset
+                      className="select-wrap"
+                      role="group"
+                      id="horario-options"
+                      style={{ display: "none" }}
+                    >
+                      <div className="select">
+                        <select name="cita-details" id="cita-details" required>
+                          <option value="Please Select">Elije un horario</option>
+                          <option value="consulta-general">8pm</option>
+                          <option value="control-medico">9pm</option>
+                          <option value="seguimiento">10pm</option>
+                        </select>
+                      </div>
+                    </fieldset>
+                    {/* Termina select que aparece al elegir "Cita" */}
                     <fieldset className="message">
                       <textarea
                         placeholder="Escribe tú mensaje"
