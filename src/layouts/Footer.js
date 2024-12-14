@@ -155,7 +155,7 @@ const Footer = () => {
                           <Link legacyBehavior href="/blog-grid">
                             <a className="fx meta-news clr-pri-6">
                               <i className="far fa-calendar-alt" />
-                              13 dec 2024
+                              diciembre 2024
                             </a>
                           </Link>
                         </li>
