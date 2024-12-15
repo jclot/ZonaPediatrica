@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PageBanner from "../src/components/PageBanner";
 import TestimonialSlider from "../src/components/TestimonialSlider";
@@ -8,6 +9,37 @@ import Layout from "../src/layouts/Layout";
 import { fourSlider } from "../src/SliderProps";
 
 const About = () => {
+
+  useEffect(() => {
+    // Cargar los scripts de Calendly cuando el componente se monte
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Cargar el CSS de Calendly
+    const link = document.createElement("link");
+    link.href = "https://assets.calendly.com/assets/external/widget.css";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+
+    return () => {
+      // Limpiar los scripts y el CSS cuando el componente se desmonte
+      document.body.removeChild(script);
+      document.head.removeChild(link);
+    };
+  }, []);
+
+  // Función para abrir el popup de Calendly
+  const handleCalendlyClick = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/zonapediatrica/30min",
+    });
+  };
+
+
   return (
     <Layout bodyClass={"about"}>
       <PageBanner pageName={"Acerca de mí"} />
@@ -542,8 +574,8 @@ const About = () => {
                 </div>
                 <div className="inner-sc-contact">
                   <div className="box-btn">
-                    <Link legacyBehavior href="/contact">
-                      <a className="fl-btn st-9">
+                    <Link legacyBehavior href="#">
+                      <a className="fl-btn st-9" onClick={handleCalendlyClick}>
                         <span className="inner">AGENDAR CITA</span>
                       </a>
                     </Link>

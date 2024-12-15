@@ -1,8 +1,40 @@
 import PageBanner from "../src/components/PageBanner";
 import { LeftArrow, RightArrow } from "../src/Icons";
 import Layout from "../src/layouts/Layout";
+import React, { useEffect } from "react";
+import Link from "next/link";
 
 const Contact = () => {
+
+  useEffect(() => {
+    // Cargar los scripts de Calendly cuando el componente se monte
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Cargar el CSS de Calendly
+    const link = document.createElement("link");
+    link.href = "https://assets.calendly.com/assets/external/widget.css";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+
+    return () => {
+      // Limpiar los scripts y el CSS cuando el componente se desmonte
+      document.body.removeChild(script);
+      document.head.removeChild(link);
+    };
+  }, []);
+
+  // Función para abrir el popup de Calendly
+  const handleCalendlyClick = (e) => {
+    e.preventDefault();
+    Calendly.initPopupWidget({
+      url: "https://calendly.com/zonapediatrica/30min",
+    });
+  };
+
   return (
     <Layout bodyClass={"contact"}>
       <PageBanner pageName={"Contacto"} pageTitle={"Contacto"} />
@@ -245,21 +277,32 @@ const Contact = () => {
                         id="number"
                       />
                     </fieldset>
+                    {/* <fieldset className="cedula">
+                      <input
+                        type="number"
+                        placeholder="Cédula de identidad"
+                        required=""
+                        name="number"
+                        className="number"
+                        id="number"
+                      />
+                    </fieldset> */}
                     <fieldset className="select-wrap" role="group">
                       <div className="select">
                         <select
                           name="subject"
                           id="subject"
                           onChange={(e) => {
-                            const citaOptions = document.getElementById("cita-options");
-                            const horarioOptions = document.getElementById("horario-options");
+                            // const agendar = document.getElementById("agendar");
+
                             if (e.target.value === "services1") {
-                              citaOptions.style.display = "block";
-                              horarioOptions.style.display = "block";
-                            } else {
-                              citaOptions.style.display = "none";
-                              horarioOptions.style.display = "none";
+                              // agendar.style.display = "block";
+                              handleCalendlyClick(e);
+
                             }
+                            // else {
+                            //   agendar.style.display = "none";
+                            // }
                           }}
                           required
                         >
@@ -270,37 +313,21 @@ const Contact = () => {
                       </div>
                     </fieldset>
                     {/* Nuevo select que aparece al elegir "Cita" */}
-                    <fieldset
+                    {/* <fieldset
                       className="select-wrap"
                       role="group"
-                      id="cita-options"
+                      id="agendar"
                       style={{ display: "none" }}
                     >
-                      <div className="select">
-                        <select name="cita-details" id="cita-details" required>
-                          <option value="Please Select">Elije una cita</option>
-                          <option value="consulta-general">Consulta General</option>
-                          <option value="control-medico">Control Médico</option>
-                          <option value="seguimiento">Seguimiento</option>
-                        </select>
-                      </div>
-                    </fieldset>
-                    <fieldset
-                      className="select-wrap"
-                      role="group"
-                      id="horario-options"
-                      style={{ display: "none" }}
-                    >
-                      <div className="select">
-                        <select name="cita-details" id="cita-details" required>
-                          <option value="Please Select">Elije un horario</option>
-                          <option value="consulta-general">8pm</option>
-                          <option value="control-medico">9pm</option>
-                          <option value="seguimiento">10pm</option>
-                        </select>
-                      </div>
-                    </fieldset>
-                    {/* Termina select que aparece al elegir "Cita" */}
+                      <Link legacyBehavior href="#"> */}
+                    {/* <a className="fl-btn st-6 cita-btn" onClick={handleCalendlyClick}>
+                          <span className="inner">Agendar Cita</span>
+                        </a> */}
+                    {/* <button className="fl-btn st-6 cita-btn" onClick={handleCalendlyClick}>
+                          <span className="inner">Agendar Cita</span>
+                        </button>
+                      </Link>
+                    </fieldset> */}
                     <fieldset className="message">
                       <textarea
                         placeholder="Escribe tú mensaje"
@@ -319,6 +346,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </form>
+                {/* <ScheduleAppointment /> */}
               </div>
             </div>
           </div>
