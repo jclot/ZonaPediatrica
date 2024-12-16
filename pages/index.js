@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LatestProgramSlider from "../src/components/LatestProgramSlider";
 import PhotoGallerySlider from "../src/components/PhotoGallerySlider";
@@ -16,12 +16,34 @@ import Header1 from "../src/layouts/header/Header1";
 import Layout from "../src/layouts/Layout";
 import { fourSlider, heroSlider } from "../src/SliderProps";
 import { activeNavMenu } from "../src/utils";
+import { PopupModal } from "react-calendly";
 
 const Index = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+  });
 
   useEffect(() => {
     activeNavMenu();
   }, []);
+
+  // Función para manejar cambios en los campos del formulario
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Función para abrir el popup de Calendly
+  const handleCalendlyClick = (e) => {
+    e.preventDefault();
+    setIsOpen(true);
+  };
 
   return (
     <Layout noFooter noHeader bodyClass={"main"}>
@@ -770,8 +792,7 @@ const Index = () => {
                 data-wow-duration="1000ms"
               >
                 <form
-                  action="contact/contact-process.php"
-                  method="post"
+                  onSubmit={handleCalendlyClick}
                   id="commentform"
                   className="comment-form"
                 >
@@ -781,55 +802,31 @@ const Index = () => {
                       id="name"
                       name="name"
                       placeholder="Nombre Completo"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
                     />
                   </div>
                   <div className="row-form st-1 mg-bt-20">
                     <input
                       type="text"
                       placeholder="Correo Electrónico"
-                      id="progam"
-                      name="progam"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
                     />
-                    <svg
-                      className="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      width={21}
-                      height={17}
-                      viewBox="0 0 21 17"
-                    >
-                      <g data-name={2}>
-                        <image
-                          width={21}
-                          height={17}
-                          xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAABa0lEQVQ4jaXUTUtVURTG8d+9xI2cSGMnzvwC0bgmDmwUODAJbJLOblJaRNMigoIgJ7twEKSlzqpP0EAQ/AIS5UAcNImoIOhFZdW+trl4jm/P5OznrLP/a+299j6N7fFxx1JK/2dPTDTiceJ4xF3YKdxDG9NR6UlcxBL+HAHZg7c4j20MNNGHl3iF1iGBrQIYei6l9wHdwCcM403OfFDNFsCPefkC+gudbg1i8YAV38TlPA7GqJS+daCh139L/6cLeIpGDXAI9wt/XUorHdMsAu28DaEx3KoA9uNFMXdBSjPlByX0K24XPo7IuS5gK5+S09l/wNXurM0uH1uwWsSiot4ifhdn8vg3Rjr7WAfdwrXCx3F7jLO4hKkidqcooBYaWsZc4a8gmjBfNO8dHu4FrILKTfpREfueE20dFrqJRxWxG1ivAtZBQwH93PUulv2sDrgf9AseFP5nvnnx0zgyNPQkNy6u4STW9gPCDvM8S/1q2ASSAAAAAElFTkSuQmCC"
-                        />
-                      </g>
-                    </svg>
                   </div>
                   <div className="row-form st-1">
                     <input
                       type="text"
-                      placeholder="Espacios libres"
-                      id="time-ship"
-                      name="time-ship"
+                      placeholder="Mensaje Principal"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
                     />
-                    {/* <svg
-                      className="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      width={21}
-                      height={17}
-                      viewBox="0 0 21 17"
-                    >
-                      <g data-name={2}>
-                        <image
-                          width={21}
-                          height={17}
-                          xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAABa0lEQVQ4jaXUTUtVURTG8d+9xI2cSGMnzvwC0bgmDmwUODAJbJLOblJaRNMigoIgJ7twEKSlzqpP0EAQ/AIS5UAcNImoIOhFZdW+trl4jm/P5OznrLP/a+299j6N7fFxx1JK/2dPTDTiceJ4xF3YKdxDG9NR6UlcxBL+HAHZg7c4j20MNNGHl3iF1iGBrQIYei6l9wHdwCcM403OfFDNFsCPefkC+gudbg1i8YAV38TlPA7GqJS+daCh139L/6cLeIpGDXAI9wt/XUorHdMsAu28DaEx3KoA9uNFMXdBSjPlByX0K24XPo7IuS5gK5+S09l/wNXurM0uH1uwWsSiot4ifhdn8vg3Rjr7WAfdwrXCx3F7jLO4hKkidqcooBYaWsZc4a8gmjBfNO8dHu4FrILKTfpREfueE20dFrqJRxWxG1ivAtZBQwH93PUulv2sDrgf9AseFP5nvnnx0zgyNPQkNy6u4STW9gPCDvM8S/1q2ASSAAAAAElFTkSuQmCC"
-                        />
-                      </g>
-                    </svg> */}
                   </div>
                   <div className="row-form">
                     <button className="fl-btn st-14">
@@ -837,6 +834,19 @@ const Index = () => {
                     </button>
                   </div>
                 </form>
+                <PopupModal
+                  url="https://calendly.com/zonapediatrica/30min"
+                  open={isOpen}
+                  onModalClose={() => setIsOpen(false)}
+                  rootElement={document.getElementById("__next")}
+                  prefill={{
+                    name: formData.name,
+                    email: formData.email,
+                    customAnswers: {
+                      a1: formData.subject,
+                    },
+                  }}
+                />
               </div>
             </div>
           </div>

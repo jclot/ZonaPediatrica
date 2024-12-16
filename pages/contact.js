@@ -1,38 +1,42 @@
 import PageBanner from "../src/components/PageBanner";
 import { LeftArrow, RightArrow } from "../src/Icons";
 import Layout from "../src/layouts/Layout";
-import React, { useEffect } from "react";
-import Link from "next/link";
+import React, { useState } from "react";
+import { PopupModal } from "react-calendly";
 
-const Contact = () => {
+const Contact = ({ pageSettings, utm }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    customAnswer: "",
+  });
+  const [isNumberDisabled, setNumberDisabled] = useState(false);
 
-  useEffect(() => {
-    // Cargar los scripts de Calendly cuando el componente se monte
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.type = "text/javascript";
-    script.async = true;
-    document.body.appendChild(script);
+  // Función para manejar cambios en los campos del formulario
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
-    // Cargar el CSS de Calendly
-    const link = document.createElement("link");
-    link.href = "https://assets.calendly.com/assets/external/widget.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    return () => {
-      // Limpiar los scripts y el CSS cuando el componente se desmonte
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
-  }, []);
+  // Función para manejar el cambio del campo select
+  const handleSelectChange = (e) => {
+    const selectedOption = e.target.value;
+    if (selectedOption === "services1") {
+      setNumberDisabled(true);
+      handleCalendlyClick(e);
+    } else {
+      setNumberDisabled(false);
+    }
+  };
 
   // Función para abrir el popup de Calendly
   const handleCalendlyClick = (e) => {
     e.preventDefault();
-    Calendly.initPopupWidget({
-      url: "https://calendly.com/zonapediatrica/30min",
-    });
+    setIsOpen(true);
   };
 
   return (
@@ -255,6 +259,8 @@ const Contact = () => {
                         name="name"
                         className="name"
                         id="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                       />
                     </fieldset>
                     <fieldset className="email">
@@ -262,9 +268,11 @@ const Contact = () => {
                         type="email"
                         placeholder="Correo Electrónico"
                         required=""
-                        name="mail"
-                        className="mail"
-                        id="mail"
+                        name="email"
+                        className="email"
+                        id="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                       />
                     </fieldset>
                     <fieldset className="phone">
@@ -275,6 +283,7 @@ const Contact = () => {
                         name="number"
                         className="number"
                         id="number"
+                        disabled={isNumberDisabled}
                       />
                     </fieldset>
                     {/* <fieldset className="cedula">
@@ -292,18 +301,7 @@ const Contact = () => {
                         <select
                           name="subject"
                           id="subject"
-                          onChange={(e) => {
-                            // const agendar = document.getElementById("agendar");
-
-                            if (e.target.value === "services1") {
-                              // agendar.style.display = "block";
-                              handleCalendlyClick(e);
-
-                            }
-                            // else {
-                            //   agendar.style.display = "none";
-                            // }
-                          }}
+                          onChange={handleSelectChange}
                           required
                         >
                           <option value="Please Select" unselectable="on" >Elije una opcion</option>
@@ -312,31 +310,17 @@ const Contact = () => {
                         </select>
                       </div>
                     </fieldset>
-                    {/* Nuevo select que aparece al elegir "Cita" */}
-                    {/* <fieldset
-                      className="select-wrap"
-                      role="group"
-                      id="agendar"
-                      style={{ display: "none" }}
-                    >
-                      <Link legacyBehavior href="#"> */}
-                    {/* <a className="fl-btn st-6 cita-btn" onClick={handleCalendlyClick}>
-                          <span className="inner">Agendar Cita</span>
-                        </a> */}
-                    {/* <button className="fl-btn st-6 cita-btn" onClick={handleCalendlyClick}>
-                          <span className="inner">Agendar Cita</span>
-                        </button>
-                      </Link>
-                    </fieldset> */}
                     <fieldset className="message">
                       <textarea
                         placeholder="Escribe tú mensaje"
                         rows={5}
                         tabIndex={4}
-                        name="messagewr2"
-                        className="messagewr2"
-                        id="messagewr2"
+                        name="customAnswer"
+                        className="customAnswer"
+                        id="customAnswer"
                         defaultValue={""}
+                        value={formData.customAnswer}
+                        onChange={handleInputChange}
                       />
                     </fieldset>
                     <div className="wrap-btn">
@@ -346,6 +330,21 @@ const Contact = () => {
                     </div>
                   </div>
                 </form>
+                {isOpen && (
+                  <PopupModal
+                    url="https://calendly.com/zonapediatrica/30min"
+                    prefill={{
+                      name: formData.name,
+                      email: formData.email,
+                      customAnswers: {
+                        a1: formData.customAnswer,
+                      },
+                    }}
+                    onModalClose={() => setIsOpen(false)}
+                    open={isOpen}
+                    rootElement={document.getElementById("__next")}
+                  />
+                )}
                 {/* <ScheduleAppointment /> */}
               </div>
             </div>
