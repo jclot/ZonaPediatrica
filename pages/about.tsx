@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PageBanner from "../src/components/PageBanner";
 import TestimonialSlider from "../src/components/TestimonialSlider";
@@ -7,38 +7,16 @@ import TfCounter from "../src/components/TfCounter";
 import { LeftArrow, RightArrow } from "../src/Icons";
 import Layout from "../src/layouts/Layout";
 import { fourSlider } from "../src/SliderProps";
+import { PopupModal } from "react-calendly";
 
 const About = () => {
-
-  useEffect(() => {
-    // Cargar los scripts de Calendly cuando el componente se monte
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.type = "text/javascript";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Cargar el CSS de Calendly
-    const link = document.createElement("link");
-    link.href = "https://assets.calendly.com/assets/external/widget.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    return () => {
-      // Limpiar los scripts y el CSS cuando el componente se desmonte
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   // Función para abrir el popup de Calendly
   const handleCalendlyClick = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    window.Calendly.initPopupWidget({
-      url: "https://calendly.com/zonapediatrica/30min",
-    });
+    setIsOpen(true);
   };
-
 
   return (
     <Layout bodyClass={"about"}>
@@ -603,6 +581,12 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
+                <PopupModal
+                  url="https://calendly.com/zonapediatrica/30min"
+                  open={isOpen}
+                  onModalClose={() => setIsOpen(false)}
+                  rootElement={document.getElementById("__next")!}
+                />
               </div>
             </div>
           </div>
