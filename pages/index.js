@@ -30,8 +30,22 @@ const Index = () => {
     activeNavMenu();
   }, []);
 
+  const handleInputInvalid = (e) => {
+    switch (e.target.name) {
+      case "name":
+        e.target.setCustomValidity("Por favor, ingresa tu nombre completo.");
+        break;
+      case "email":
+        e.target.setCustomValidity("Por favor, ingresa un correo electrónico válido.");
+        break;
+      default:
+        e.target.setCustomValidity("");
+    }
+  };
+
   // Función para manejar cambios en los campos del formulario
   const handleInputChange = (e) => {
+    e.target.setCustomValidity("");
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -804,8 +818,25 @@ const Index = () => {
                       placeholder="Nombre Completo"
                       value={formData.name}
                       onChange={handleInputChange}
+                      onInvalid={handleInputInvalid}
                       required
                     />
+                    <svg
+                      className="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      width={21}
+                      height={17}
+                      viewBox="0 0 21 17"
+                    >
+                      <g data-name={2}>
+                        <image
+                          width={21}
+                          height={17}
+                          xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAABa0lEQVQ4jaXUTUtVURTG8d+9xI2cSGMnzvwC0bgmDmwUODAJbJLOblJaRNMigoIgJ7twEKSlzqpP0EAQ/AIS5UAcNImoIOhFZdW+trl4jm/P5OznrLP/a+299j6N7fFxx1JK/2dPTDTiceJ4xF3YKdxDG9NR6UlcxBL+HAHZg7c4j20MNNGHl3iF1iGBrQIYei6l9wHdwCcM403OfFDNFsCPefkC+gudbg1i8YAV38TlPA7GqJS+daCh139L/6cLeIpGDXAI9wt/XUorHdMsAu28DaEx3KoA9uNFMXdBSjPlByX0K24XPo7IuS5gK5+S09l/wNXurM0uH1uwWsSiot4ifhdn8vg3Rjr7WAfdwrXCx3F7jLO4hKkidqcooBYaWsZc4a8gmjBfNO8dHu4FrILKTfpREfueE20dFrqJRxWxG1ivAtZBQwH93PUulv2sDrgf9AseFP5nvnnx0zgyNPQkNy6u4STW9gPCDvM8S/1q2ASSAAAAAElFTkSuQmCC"
+                        />
+                      </g>
+                    </svg>
                   </div>
                   <div className="row-form st-1 mg-bt-20">
                     <input
@@ -815,8 +846,25 @@ const Index = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
+                      onInvalid={handleInputInvalid}
                       required
                     />
+                    <svg
+                      className="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      width={21}
+                      height={17}
+                      viewBox="0 0 21 17"
+                    >
+                      <g data-name={2}>
+                        <image
+                          width={21}
+                          height={17}
+                          xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAABa0lEQVQ4jaXUTUtVURTG8d+9xI2cSGMnzvwC0bgmDmwUODAJbJLOblJaRNMigoIgJ7twEKSlzqpP0EAQ/AIS5UAcNImoIOhFZdW+trl4jm/P5OznrLP/a+299j6N7fFxx1JK/2dPTDTiceJ4xF3YKdxDG9NR6UlcxBL+HAHZg7c4j20MNNGHl3iF1iGBrQIYei6l9wHdwCcM403OfFDNFsCPefkC+gudbg1i8YAV38TlPA7GqJS+daCh139L/6cLeIpGDXAI9wt/XUorHdMsAu28DaEx3KoA9uNFMXdBSjPlByX0K24XPo7IuS5gK5+S09l/wNXurM0uH1uwWsSiot4ifhdn8vg3Rjr7WAfdwrXCx3F7jLO4hKkidqcooBYaWsZc4a8gmjBfNO8dHu4FrILKTfpREfueE20dFrqJRxWxG1ivAtZBQwH93PUulv2sDrgf9AseFP5nvnnx0zgyNPQkNy6u4STW9gPCDvM8S/1q2ASSAAAAAElFTkSuQmCC"
+                        />
+                      </g>
+                    </svg>
                   </div>
                   <div className="row-form st-1">
                     <input
