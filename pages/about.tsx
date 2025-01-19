@@ -38,7 +38,7 @@ const About = () => {
                     data-wow-duration="1200ms"
                   >
                     <img
-                      src="assets/images/common/sc-about1.jpg"
+                      src="assets/images/common/sc-aboutus2.jpg"
                       alt="Images"
                     />
                   </div>
@@ -48,13 +48,13 @@ const About = () => {
                     data-wow-duration="1200ms"
                   >
                     <img
-                      src="assets/images/common/sc-about2.jpg"
+                      src="assets/images/common/sc-aboutus3.jpg"
                       alt="Images"
                     />
                   </div>
                 </div>
                 <div className="image p-l70">
-                  <img src="assets/images/common/sc-about3.jpg" alt="Images" />
+                  <img src="assets/images/common/sc-aboutus1.jpg" alt="Images" />
                 </div>
                 {/* <div
                   className="box-parents wow fadeInUp animated"
