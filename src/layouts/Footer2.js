@@ -201,7 +201,7 @@ const Footer2 = () => {
               <div className="footer-bottom jus-ct">
                 <p className="copy-right">
                   Copyright © {new Date().getFullYear()}, Kinco - Kindergarten
-                  HTML Template. Desarollado por{" Julian Clot"}
+                  HTML Template. Desarollado por <a href="https://github.com/jclot" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>{"Julian Clot"}</a>
                 </p>
               </div>
             </div>
