@@ -4,6 +4,9 @@ import { LeftArrow, RightArrow } from "../src/Icons";
 import Layout from "../src/layouts/Layout";
 
 const TimeTable = () => {
+
+  const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
   return (
     <Layout bodyClass={"about"}>
       <PageBanner pageName={"Horarios"} />
@@ -31,7 +34,7 @@ const TimeTable = () => {
                 >
                   <Nav as={"ul"} className="menu-tab">
                     <Nav.Link eventKey={"1st"} as={"li"}>
-                      <span>Diciembre</span>
+                      <span>{months[new Date().getMonth()]}</span>
                     </Nav.Link>
                     {/* <Nav.Link eventKey={"2nd"} as={"li"}>
                       <span>2nd Grade</span>

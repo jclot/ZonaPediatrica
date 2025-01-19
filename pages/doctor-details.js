@@ -36,7 +36,7 @@ const DoctorDetails = () => {
                   data-wow-duration="1200ms"
                 >
                   <img
-                    src="assets/images/common/sc-service-10.jpg"
+                    src="assets/images/about-us-image-Photoroom.jpg"
                     alt="Image"
                   />
                 </div>
