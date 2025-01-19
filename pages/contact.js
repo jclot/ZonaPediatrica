@@ -3,6 +3,7 @@ import { LeftArrow, RightArrow } from "../src/Icons";
 import Layout from "../src/layouts/Layout";
 import React, { useState } from "react";
 import { PopupModal } from "react-calendly";
+import emailjs from "@emailjs/browser";
 
 const Contact = ({ pageSettings, utm }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +25,40 @@ const Contact = ({ pageSettings, utm }) => {
 
   // Función para manejar el cambio del campo select
   const handleSelectChange = (e) => {
+    e.preventDefault();
     const selectedOption = e.target.value;
     if (selectedOption === "services1") {
       setNumberDisabled(true);
       handleCalendlyClick(e);
+    } else if (selectedOption == "services2") {
+      handleFormSubmit(e, selectedOption);
     } else {
       setNumberDisabled(false);
+    }
+  };
+
+  const handleFormSubmit = (e, selectedOption) => {
+    e.preventDefault();
+    if (selectedOption == "services2") {
+      emailjs
+        .send(
+          "service_3zuq33d",
+          "template_ak1mqvf",
+          {
+            name: formData.name,
+            email: formData.email,
+            message: `Pregunta de ${formData.name}: ${formData.customAnswer}`,
+          },
+          "Phgaj2JA0vnTqmRrp"
+        )
+        .then(
+          (response) => {
+            alert("El correo ha sido enviado exitosamente.");
+          },
+          (error) => {
+            alert("Hubo un error al enviar el correo: ", error.text);
+          }
+        );
     }
   };
 
@@ -245,8 +274,7 @@ const Contact = ({ pageSettings, utm }) => {
               <div className="form-message">
                 <h2 className="heading">Deja un mensaje</h2>
                 <form
-                  action="contact/contact-process4.php"
-                  method="post"
+                  onSubmit={handleFormSubmit}
                   id="commentform"
                   className="comment-form"
                 >
@@ -255,7 +283,7 @@ const Contact = ({ pageSettings, utm }) => {
                       <input
                         type="text"
                         placeholder="Nombre Completo"
-                        required=""
+                        required
                         name="name"
                         className="name"
                         id="name"
@@ -267,7 +295,7 @@ const Contact = ({ pageSettings, utm }) => {
                       <input
                         type="email"
                         placeholder="Correo Electrónico"
-                        required=""
+                        required
                         name="email"
                         className="email"
                         id="email"
@@ -279,7 +307,7 @@ const Contact = ({ pageSettings, utm }) => {
                       <input
                         type="number"
                         placeholder="Número telefónico"
-                        required=""
+                        required
                         name="number"
                         className="number"
                         id="number"
@@ -355,3 +383,5 @@ const Contact = ({ pageSettings, utm }) => {
   );
 };
 export default Contact;
+
+
