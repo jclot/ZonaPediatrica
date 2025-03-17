@@ -3608,7 +3608,7 @@
 
 .tf-teacher-details .teacher-image,
 .tf-teacher-details .teacher-desc {
-  width: calc(35% - 22px);
+  width: calc(50% - 22px);
   margin-left: 22px;
 }
 
